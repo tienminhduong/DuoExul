@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 809860444}
   - component: {fileID: 809860443}
   - component: {fileID: 809860445}
+  - component: {fileID: 809860446}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -464,6 +465,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DDTAbilityExecutor
   abilityData: {fileID: 11400000, guid: 1914785cc1f4b4f27866ca7eb8aa2654, type: 2}
   target: {fileID: 1211719695}
+--- !u!114 &809860446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809860440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ecc46d42b94c6c6904f2869d18cdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthComponent
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &955134381
 GameObject:
   m_ObjectHideFlags: 0
