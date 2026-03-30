@@ -6,7 +6,7 @@ using UnityEngine;
 public class DDTAbilityData : ScriptableObject
 {
     public string label;
-    [SerializeReference] public List<AbilityEffect> effects;
+    [SerializeReference] public List<DDTAbilityEffect> effects;
 
     void OnEnable()
     {
@@ -14,18 +14,18 @@ public class DDTAbilityData : ScriptableObject
             label = name;
 
         if (effects == null)
-            effects = new List<AbilityEffect>();
+            effects = new List<DDTAbilityEffect>();
     }
 }
 
 [Serializable]
-public abstract class AbilityEffect
+public abstract class DDTAbilityEffect
 {
     public abstract void Execute(GameObject caster, GameObject target);
 }
 
 [Serializable]
-public class DamageEffect : AbilityEffect
+public class DDTDamageEffect : DDTAbilityEffect
 {
     public int damageAmount;
 
@@ -37,7 +37,7 @@ public class DamageEffect : AbilityEffect
 
 
 [Serializable]
-public class KnockbackEffect : AbilityEffect
+public class DDTKnockbackEffect : DDTAbilityEffect
 {
     public float knockbackForce;
 

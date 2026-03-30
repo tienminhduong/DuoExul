@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DDTAbilityData
   label: DDTAbilityData
   effects:
-  - rid: 6530040913438179328
-  - rid: 6530040913438179329
+  - rid: 6530040924685729863
+  - rid: 6530040924685729864
   references:
     version: 2
     RefIds:
-    - rid: 6530040913438179328
-      type: {class: DamageEffect, ns: , asm: Assembly-CSharp}
+    - rid: 6530040924685729863
+      type: {class: DDTDamageEffect, ns: , asm: Assembly-CSharp}
       data:
-        damageAmount: 10
-    - rid: 6530040913438179329
-      type: {class: KnockbackEffect, ns: , asm: Assembly-CSharp}
+        damageAmount: 0
+    - rid: 6530040924685729864
+      type: {class: DDTKnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
-        knockbackForce: 2
+        knockbackForce: 0
