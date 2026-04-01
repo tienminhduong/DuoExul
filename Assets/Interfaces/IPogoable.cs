@@ -7,6 +7,6 @@ public class PlayerController : MonoBehaviour
 }
 public interface IPogoable
 {
-    bool CanPogo();
-    void OnPogo(PlayerController player);
+    bool CanPogo(GameObject source); // Check if can pogo
+    void OnPogo(); // do anything by itself
 }
