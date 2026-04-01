@@ -33,6 +33,11 @@ public class StateMachine
         currentState?.Enter();
     }
 
+    public bool IsInState<T>() where T : IState
+    {
+        return currentState is T;
+    } 
+
     public void AddState(IState state)
     {
         states[state.GetType()] = state;
