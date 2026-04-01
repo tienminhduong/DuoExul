@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class PlayerJumpState : BasePlayerState
 {
-    [ReadOnly][SerializeField] float jumpForce;
-    public PlayerJumpState(PlayerController player, float jumpForce) : base(player)
+    [ReadOnly][SerializeField] float jumpHeight;
+    public PlayerJumpState(PlayerController player, float jumpHeight) : base(player)
     {
-        this.jumpForce = jumpForce;
+        this.jumpHeight = jumpHeight;
     }
 
     public override void Enter()
     {
         base.Enter();
+        var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y) * player.Rigidbody.mass;
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 

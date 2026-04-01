@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
 
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpHeight = 6f;
     [SerializeField] private int maxJumps = 1;
 
     [SerializeField] private LayerMask groundLayer;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         stateMachine.AddState(new PlayerIdleState(this));
         stateMachine.AddState(new PlayerWalkingState(this));
-        stateMachine.AddState(new PlayerJumpState(this, jumpForce));
+        stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
 
         stateMachine.SetState<PlayerIdleState>();
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
     public void SetDirection(Vector2 newDirection)
     {
         Direction = newDirection.normalized;
-        if (Direction.magnitude > 0)
+        if (Direction.magnitude > 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
             stateMachine.ChangeState<PlayerIdleState>();
