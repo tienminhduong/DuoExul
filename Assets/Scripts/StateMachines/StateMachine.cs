@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
+using TriInspector;
+using UnityEngine;
 
+[Serializable]
 public class StateMachine
 {
     // StateNode currentState;
-    IState currentState;
+    [ReadOnly] [SerializeReference] IState currentState;
     readonly Dictionary<Type, IState> states = new();
 
     public void Update()
@@ -17,9 +20,9 @@ public class StateMachine
         currentState?.FixedUpdate();
     }
 
-    public void SetState<T>(T state) where T : IState
+    public void SetState<T>() where T : IState
     {
-        currentState = states[state.GetType()];
+        currentState = states[typeof(T)];
         currentState?.Enter();
     }
 
