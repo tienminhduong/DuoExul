@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 93484599}
   - component: {fileID: 93484598}
   - component: {fileID: 93484597}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,6 +506,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa85fbf1831081c68a83d82078bf00f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  jumpForce: 10
+  maxJumps: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  stateMachine:
+    currentState:
+      rid: -2
+  viableJumps: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &955134381
 GameObject:
   m_ObjectHideFlags: 0

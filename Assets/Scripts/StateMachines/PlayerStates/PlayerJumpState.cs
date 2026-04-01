@@ -4,10 +4,8 @@ using UnityEngine;
 public class PlayerJumpState : BasePlayerState
 {
     [ReadOnly][SerializeField] float jumpForce;
-    [ReadOnly][SerializeField] float speed;
-    public PlayerJumpState(PlayerController player, float speed, float jumpForce) : base(player)
+    public PlayerJumpState(PlayerController player, float jumpForce) : base(player)
     {
-        this.speed = speed;
         this.jumpForce = jumpForce;
     }
 
@@ -17,9 +15,16 @@ public class PlayerJumpState : BasePlayerState
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
+    public override void Update()
+    {
+        base.Update();
+        if (player.Rigidbody.linearVelocityY <= 0)
+            player.ChangeState<PlayerFallState>();
+    }
+
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        player.transform.Translate(speed * Time.fixedDeltaTime * player.Direction);
+        player.UpdateMoving();
     }
 }
