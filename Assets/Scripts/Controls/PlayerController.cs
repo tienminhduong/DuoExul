@@ -7,9 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
-
     private Vector2 velocity;
-    [ReadOnly] [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;
 
     void Awake()
     {

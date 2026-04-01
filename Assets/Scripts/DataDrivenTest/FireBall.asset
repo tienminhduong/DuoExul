@@ -15,7 +15,7 @@ MonoBehaviour:
   label: DDTAbilityData
   effects:
   - rid: 6530040924685729863
-  - rid: 6530040924685729864
+  - rid: 6530040924685729865
   references:
     version: 2
     RefIds:
@@ -23,7 +23,7 @@ MonoBehaviour:
       type: {class: DDTDamageEffect, ns: , asm: Assembly-CSharp}
       data:
         damageAmount: 0
-    - rid: 6530040924685729864
+    - rid: 6530040924685729865
       type: {class: DDTKnockbackEffect, ns: , asm: Assembly-CSharp}
       data:
         knockbackForce: 0
