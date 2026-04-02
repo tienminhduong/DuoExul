@@ -8,7 +8,7 @@ public class PlayerIdleState : BasePlayerState
     public override void Update()
     {
         base.Update();
-        if (player.Direction.magnitude > 0)
+        if (player.Direction != 0)
             player.ChangeState<PlayerWalkingState>();
     }
 }

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public Vector2 Direction { get; private set; }
+    public int Direction { get; private set; }
 
 
     [SerializeField] private float moveSpeed = 5f;
@@ -59,10 +59,10 @@ public class PlayerController : MonoBehaviour
         stateMachine.ChangeState<T>();
     }
 
-    public void SetDirection(Vector2 newDirection)
+    public void SetDirection(Vector2 vector2)
     {
-        Direction = newDirection.normalized;
-        if (Direction.magnitude > 0 && stateMachine.IsInState<PlayerIdleState>())
+        Direction = vector2.x != 0 ? (int)Mathf.Sign(vector2.x) : 0;
+        if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
             stateMachine.ChangeState<PlayerIdleState>();
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
     // called in fixed update
     public void UpdateMoving()
     {
-        transform.Translate(moveSpeed * Time.fixedDeltaTime * Direction);
+        transform.Translate(Direction * moveSpeed * Time.fixedDeltaTime * Vector2.right);
     }
 
     private void FixedUpdate()

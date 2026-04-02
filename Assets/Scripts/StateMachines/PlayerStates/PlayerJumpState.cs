@@ -12,14 +12,15 @@ public class PlayerJumpState : BasePlayerState
     public override void Enter()
     {
         base.Enter();
-        var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y) * player.Rigidbody.mass;
+        player.Rigidbody.linearVelocityY = 0;
+        var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y * player.Rigidbody.gravityScale) * player.Rigidbody.mass;
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
     public override void Update()
     {
         base.Update();
-        if (player.Rigidbody.linearVelocityY <= 0)
+        if (player.Rigidbody.linearVelocityY < 0)
             player.ChangeState<PlayerFallState>();
     }
 
