@@ -15,6 +15,8 @@ public class PlayerJumpState : BasePlayerState
         player.Rigidbody.linearVelocityY = 0;
         var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y * player.Rigidbody.gravityScale) * player.Rigidbody.mass;
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        animator.CrossFade(JumpHash, 0.1f);
     }
 
     public override void Update()

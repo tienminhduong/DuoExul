@@ -4,11 +4,12 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IEntity
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
     public int Direction { get; private set; }
+    public Animator Animator { get; private set; }
 
 
     [SerializeField] private float moveSpeed = 5f;
@@ -17,10 +18,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Reference")]
+    [SerializeField] private GameObject attackHitbox;
+
 
     [Header("Debug readonly")]
     [ReadOnly][SerializeField] private StateMachine stateMachine;
-    [ReadOnly][SerializeField] private StateMachine attackStateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
     [ReadOnly][SerializeField] private int viableJumps = 1;
@@ -34,7 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         Rigidbody = GetComponent<Rigidbody2D>();
         Collider = GetComponent<BoxCollider2D>();
-
+        Animator = GetComponent<Animator>();
         SetupStateMachine();
     }
 
@@ -63,6 +66,7 @@ public class PlayerController : MonoBehaviour
     public void SetDirection(Vector2 vector2)
     {
         Direction = vector2.x != 0 ? (int)Mathf.Sign(vector2.x) : 0;
+        transform.localScale = new Vector3(Direction != 0 ? -Direction : transform.localScale.x, transform.localScale.y, transform.localScale.z);
         if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
@@ -106,5 +110,10 @@ public class PlayerController : MonoBehaviour
 
         if (groundLayer.Contains(collision.gameObject))
             OnGrounded?.Invoke();
+    }
+
+    public void Attack()
+    {
+        attackHitbox.SetActive(true);
     }
 }

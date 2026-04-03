@@ -5,6 +5,12 @@ public class PlayerIdleState : BasePlayerState
         
     }
 
+    override public void Enter()
+    {
+        base.Enter();
+        animator.CrossFade(IdleHash, 0.1f);
+    }
+
     public override void Update()
     {
         base.Update();

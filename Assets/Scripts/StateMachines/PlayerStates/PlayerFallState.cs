@@ -13,6 +13,8 @@ public class PlayerFallState : BasePlayerState
         base.Enter();
         player.Rigidbody.gravityScale *= 2f;
         player.Rigidbody.linearVelocityY = 0f;
+
+        animator.CrossFade(FallHash, 0.1f);
     }
 
     public override void FixedUpdate()
