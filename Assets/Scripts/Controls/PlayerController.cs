@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Debug readonly")]
     [ReadOnly][SerializeField] private StateMachine stateMachine;
+    [ReadOnly][SerializeField] private StateMachine attackStateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
     [ReadOnly][SerializeField] private int viableJumps = 1;
