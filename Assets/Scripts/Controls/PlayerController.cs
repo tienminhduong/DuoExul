@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,7 +10,8 @@ public class PlayerController : MonoBehaviour, IEntity
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
     public int Direction { get; private set; }
-    public Animator Animator { get; private set; }
+    // public Animator Animator { get; private set; }
+    public AnimationController AnimationController { get; private set; }
 
 
     [SerializeField] private float moveSpeed = 5f;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour, IEntity
 
     [Header("Reference")]
     [SerializeField] private GameObject attackHitbox;
+    [SerializeField] private CommandInvoker attackCommandInvoker;
 
 
     [Header("Debug readonly")]
@@ -37,7 +40,11 @@ public class PlayerController : MonoBehaviour, IEntity
     {
         Rigidbody = GetComponent<Rigidbody2D>();
         Collider = GetComponent<BoxCollider2D>();
-        Animator = GetComponent<Animator>();
+        AnimationController = new AnimationController(GetComponentInChildren<Animator>());
+
+        var atttackCommand = new PlayerAttackCommand(this);
+        attackCommandInvoker.commandData = ScriptableObject.CreateInstance<CommandData>();
+        attackCommandInvoker.commandData.commands.Add(atttackCommand);
         SetupStateMachine();
     }
 
@@ -49,6 +56,7 @@ public class PlayerController : MonoBehaviour, IEntity
         stateMachine.AddState(new PlayerWalkingState(this));
         stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
+        // stateMachine.AddState(new PlayerAttackState(this));
 
         stateMachine.SetState<PlayerIdleState>();
     }
@@ -114,6 +122,17 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void Attack()
     {
-        attackHitbox.SetActive(true);
+        // attackHitbox.SetActive(true);
+
+        // Task.Run(async () =>
+        // {
+        //     await attackCommandInvoker.ExecuteCommand();
+        // });
+
+        var attackCommand = attackCommandInvoker.ExecuteCommandAsync();
+
+        // attackCommandInvoker.ExecuteCommand();
+
+        // stateMachine.ChangeState<PlayerAttackState>();
     }
 }

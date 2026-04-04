@@ -1,15 +1,35 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class CommandInvoker : MonoBehaviour
 {
-    [SerializeField] private CommandData commandData;
+    [SerializeField] public CommandData commandData;
     [SerializeField] private GameObject target;
-    public void ExecuteCommand(List<ICommand> commands)
+    public void ExecuteCommand()
     {
-        foreach (var command in commands)
+        Debug.Log($"Executing command: {commandData.label}");
+        foreach (var command in commandData.commands)
         {
             command.Execute();
+        }
+    }
+
+    public async Awaitable ExecuteCommandAsync()
+    {
+        Debug.Log($"Executing command: {commandData.label}");
+        foreach (var command in commandData.commands)
+        {
+            await command.ExecuteAsync();
+        }
+        
+
+        if (commandData.commands.Count > 0 && commandData.commands[0] is PlayerAttackCommand pc)
+        {
+            if (pc.player is PlayerController pcc)
+            {
+                pcc.ChangeState<PlayerIdleState>();
+            }
         }
     }
 }

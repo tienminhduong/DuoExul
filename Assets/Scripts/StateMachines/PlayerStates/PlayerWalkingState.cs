@@ -11,7 +11,7 @@ public class PlayerWalkingState : BasePlayerState
     public override void Enter()
     {
         base.Enter();
-        animator.CrossFade(WalkHash, 0.1f);
+        AnimationController.CrossFade(AnimationController.WalkHash, 0.1f);
     }
 
     public override void FixedUpdate()

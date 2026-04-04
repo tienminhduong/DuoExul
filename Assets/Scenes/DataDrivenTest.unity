@@ -2492,6 +2492,7 @@ GameObject:
   - component: {fileID: 1946293516}
   - component: {fileID: 1946293515}
   - component: {fileID: 1946293514}
+  - component: {fileID: 1946293518}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2626,6 +2627,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   attackHitbox: {fileID: 0}
+  attackCommandInvoker: {fileID: 1946293518}
   stateMachine:
     currentState:
       rid: -2
@@ -2708,6 +2710,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1946293518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946293510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e7390ab39da9c0a8e803b44af8c868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CommandInvoker
+  commandData: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &1952970805
 GameObject:
   m_ObjectHideFlags: 0
