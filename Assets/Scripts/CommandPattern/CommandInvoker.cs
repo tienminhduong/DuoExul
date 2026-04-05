@@ -8,7 +8,6 @@ public class CommandInvoker : MonoBehaviour
     [SerializeField] private GameObject target;
     public void ExecuteCommand()
     {
-        Debug.Log($"Executing command: {commandData.label}");
         foreach (var command in commandData.commands)
         {
             command.Execute();
@@ -17,19 +16,9 @@ public class CommandInvoker : MonoBehaviour
 
     public async Awaitable ExecuteCommandAsync()
     {
-        Debug.Log($"Executing command: {commandData.label}");
         foreach (var command in commandData.commands)
         {
             await command.ExecuteAsync();
-        }
-        
-
-        if (commandData.commands.Count > 0 && commandData.commands[0] is PlayerAttackCommand pc)
-        {
-            if (pc.player is PlayerController pcc)
-            {
-                pcc.ChangeState<PlayerIdleState>();
-            }
         }
     }
 }

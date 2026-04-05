@@ -11,11 +11,11 @@ public class AnimationController
 
     public UnityAction OnOverrideAnimationComplete;
 
-    private async Awaitable CrossFade(int stateHash, float transitionDuration = 0.1f)
+    private async Awaitable CrossFade(AnimationData animationData, float transitionDuration = 0.1f)
     {
-        Debug.Log($"Crossfading to state with hash: {stateHash}");
-        animator.CrossFade(stateHash, transitionDuration);
-        await Awaitable.WaitForSecondsAsync(transitionDuration);
+        Debug.Log($"Crossfading to state with hash: {animationData.Hash}");
+        animator.CrossFade(animationData.Hash, transitionDuration);
+        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.duration);
     }
 
     private AnimationData currentAnim;
@@ -28,7 +28,7 @@ public class AnimationController
                 currentStandardAnim = currentAnim;
 
             currentAnim = anim;
-            await CrossFade(anim.Hash, transitionDuration);
+            await CrossFade(anim, transitionDuration);
             OnOverrideAnimationComplete?.Invoke();
             await RevertStandardAnim(transitionDuration);
         }
@@ -38,7 +38,7 @@ public class AnimationController
             if (currentAnim.priority == AnimationData.PriorityLevel.Standard)
             {
                 currentAnim = anim;
-                await CrossFade(anim.Hash, transitionDuration);
+                await CrossFade(anim, transitionDuration);
             }
         }
     }
@@ -47,7 +47,7 @@ public class AnimationController
     {
         currentAnim = currentStandardAnim;
         Debug.Log($"Reverting to standard animation: {currentStandardAnim.name}");
-        await CrossFade(currentStandardAnim.Hash, transitionDuration);
+        await CrossFade(currentStandardAnim, transitionDuration);
     }
 }
 

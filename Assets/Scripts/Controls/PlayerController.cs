@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour, IEntity
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
     public int Direction { get; private set; }
-    // public Animator Animator { get; private set; }
     public AnimationController AnimationController { get; private set; }
 
 
