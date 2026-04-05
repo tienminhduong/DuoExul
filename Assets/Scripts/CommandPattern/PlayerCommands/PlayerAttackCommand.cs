@@ -1,25 +1,24 @@
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerAttackCommand : PlayerBaseCommand
 {
-    public float attackAnimDuration = 0.267f;
+    // public float attackAnimDuration = 0.2f;
+    public AnimationData attackAnimData = new(AnimationData.PriorityLevel.Override, "Attack1", 0.2f);
     public PlayerAttackCommand(IEntity player) : base(player)
     {
     }
 
     public override void Execute()
     {
-        // await base.ExecuteAsync();
         Debug.Log("PlayerAttackCommand executed");
-        player.AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
-        // await Task.Delay((int)(attackAnimDuration * 1000));
+        // player.AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
     }
 
     public override async Awaitable ExecuteAsync()
     {
         Debug.Log("PlayerAttackCommand executed");
-        player.AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
-        await Awaitable.WaitForSecondsAsync(attackAnimDuration);
+        await player.AnimationController.PlayAnimation(attackAnimData);
+        // player.AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
+        // await Awaitable.WaitForSecondsAsync(attackAnimDuration);
     }
 }

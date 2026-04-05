@@ -8,6 +8,6 @@ public class PlayerAttackState : BasePlayerState
     {
         base.Enter();
         // player.Attack();
-        AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
+        // AnimationController.CrossFade(AnimationController.AttackHash, 0.1f);
     }
 }

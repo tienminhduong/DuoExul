@@ -56,7 +56,6 @@ public class PlayerController : MonoBehaviour, IEntity
         stateMachine.AddState(new PlayerWalkingState(this));
         stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
-        // stateMachine.AddState(new PlayerAttackState(this));
 
         stateMachine.SetState<PlayerIdleState>();
     }
@@ -122,17 +121,6 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void Attack()
     {
-        // attackHitbox.SetActive(true);
-
-        // Task.Run(async () =>
-        // {
-        //     await attackCommandInvoker.ExecuteCommand();
-        // });
-
         var attackCommand = attackCommandInvoker.ExecuteCommandAsync();
-
-        // attackCommandInvoker.ExecuteCommand();
-
-        // stateMachine.ChangeState<PlayerAttackState>();
     }
 }

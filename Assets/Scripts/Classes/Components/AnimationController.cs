@@ -1,28 +1,74 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AnimationController
 {
-    public static readonly int IdleHash = Animator.StringToHash("Idle");
-    public static readonly int WalkHash = Animator.StringToHash("Walk");
-    public static readonly int RunHash = Animator.StringToHash("Run");
-    public static readonly int AttackHash = Animator.StringToHash("Attack");
-    public static readonly int JumpHash = Animator.StringToHash("Jump");
-    public static readonly int FallHash = Animator.StringToHash("Fall");
-
     private Animator animator;
     public AnimationController(Animator animator)
     {
         this.animator = animator;
     }
 
-    public void CrossFade(int stateHash, float transitionDuration = 0.1f)
+    public UnityAction OnOverrideAnimationComplete;
+
+    private async Awaitable CrossFade(int stateHash, float transitionDuration = 0.1f)
     {
         Debug.Log($"Crossfading to state with hash: {stateHash}");
         animator.CrossFade(stateHash, transitionDuration);
+        await Awaitable.WaitForSecondsAsync(transitionDuration);
     }
 
-    public void CrossFade(string stateName, float transitionDuration = 0.1f)
+    private AnimationData currentAnim;
+    private AnimationData currentStandardAnim;
+    public async Awaitable PlayAnimation(AnimationData anim, float transitionDuration = 0.1f)
     {
-        animator.CrossFade(stateName, transitionDuration);
+        if (anim.priority == AnimationData.PriorityLevel.Override)
+        {
+            if (currentAnim.priority == AnimationData.PriorityLevel.Standard)
+                currentStandardAnim = currentAnim;
+
+            currentAnim = anim;
+            await CrossFade(anim.Hash, transitionDuration);
+            OnOverrideAnimationComplete?.Invoke();
+            await RevertStandardAnim(transitionDuration);
+        }
+        else
+        {
+            currentStandardAnim = anim;
+            if (currentAnim.priority == AnimationData.PriorityLevel.Standard)
+            {
+                currentAnim = anim;
+                await CrossFade(anim.Hash, transitionDuration);
+            }
+        }
+    }
+
+    private async Awaitable RevertStandardAnim(float transitionDuration = 0.1f)
+    {
+        currentAnim = currentStandardAnim;
+        Debug.Log($"Reverting to standard animation: {currentStandardAnim.name}");
+        await CrossFade(currentStandardAnim.Hash, transitionDuration);
+    }
+}
+
+public struct AnimationData
+{
+    
+    public enum PriorityLevel
+    {
+        Standard = 0,
+        Override = 1,
+    }
+    public PriorityLevel priority;
+    public string name;
+    public float duration;
+
+    public readonly int Hash => Animator.StringToHash(name);
+
+    public AnimationData(PriorityLevel priority, string name, float duration)
+    {
+        this.priority = priority;
+        this.name = name;
+        this.duration = duration;
     }
 }
