@@ -14,7 +14,6 @@ public class PlayerFallState : BasePlayerState
         player.Rigidbody.gravityScale *= 2f;
         player.Rigidbody.linearVelocityY = 0f;
 
-        // AnimationController.CrossFade(AnimationController.FallHash, 0.1f);
         var fallAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Fall", 0.1f);
         var _ = AnimationController.PlayAnimation(fallAnimData);
     }

@@ -53,7 +53,6 @@ public class AnimationController
 
 public struct AnimationData
 {
-    
     public enum PriorityLevel
     {
         Standard = 0,

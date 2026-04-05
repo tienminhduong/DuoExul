@@ -9,7 +9,6 @@ public class PlayerIdleState : BasePlayerState
     override public void Enter()
     {
         base.Enter();
-        // AnimationController.CrossFade(AnimationController.IdleHash, 0.1f);
         var _ = AnimationController.PlayAnimation(idleAnimData);
     }
 
