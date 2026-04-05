@@ -1,24 +1,21 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
+[RequireComponent(typeof(IEntity))]
 public class CommandInvoker : MonoBehaviour
 {
-    [SerializeField] public CommandData commandData;
-    [SerializeField] private GameObject target;
-    public void ExecuteCommand()
+    [SerializeField] private CommandData commandData;
+    private IEntity entity;
+
+    void Awake()
     {
-        foreach (var command in commandData.commands)
-        {
-            command.Execute();
-        }
+        entity = GetComponent<IEntity>();
     }
 
     public async Awaitable ExecuteCommandAsync()
     {
         foreach (var command in commandData.commands)
         {
-            await command.ExecuteAsync();
+            await command.Execute(entity);
         }
     }
 }

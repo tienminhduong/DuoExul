@@ -3,6 +3,5 @@ using UnityEngine;
 
 public interface ICommand
 {
-    void Execute();
-    Awaitable ExecuteAsync();
+    Awaitable Execute(IEntity entity);
 }

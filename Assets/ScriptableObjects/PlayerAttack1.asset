@@ -14,9 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CommandData
   label: Attack1
   commands:
-  - rid: -2
+  - rid: 8106860985797575045
+  - rid: 8106860985797575084
+  - rid: 8106860985797575087
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    - rid: 8106860985797575045
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 19b2eac438a3fb4428135715ce57b50a, type: 2}
+    - rid: 8106860985797575084
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 81b415858e615c03ba3b12538b852728, type: 2}
+    - rid: 8106860985797575087
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 07134acff80151859883a7732e48851f, type: 2}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -22,6 +23,7 @@ public class AnimationController
     private AnimationData currentStandardAnim;
     public async Awaitable PlayAnimation(AnimationData anim, float transitionDuration = 0.1f)
     {
+        Debug.Log($"Playing animation: {anim.name} with priority {anim.priority}");
         if (anim.priority == AnimationData.PriorityLevel.Override)
         {
             if (currentAnim.priority == AnimationData.PriorityLevel.Standard)
@@ -51,6 +53,7 @@ public class AnimationController
     }
 }
 
+[Serializable]
 public struct AnimationData
 {
     public enum PriorityLevel

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
@@ -12,7 +13,6 @@ public class PlayerController : MonoBehaviour, IEntity
     public int Direction { get; private set; }
     public AnimationController AnimationController { get; private set; }
 
-
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpHeight = 6f;
     [SerializeField] private int maxJumps = 1;
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour, IEntity
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Reference")]
-    [SerializeField] private GameObject attackHitbox;
+    [SerializeField] private GameObject hitbox;
     [SerializeField] private CommandInvoker attackCommandInvoker;
 
 
@@ -41,9 +41,6 @@ public class PlayerController : MonoBehaviour, IEntity
         Collider = GetComponent<BoxCollider2D>();
         AnimationController = new AnimationController(GetComponentInChildren<Animator>());
 
-        var atttackCommand = new PlayerAttackCommand(this);
-        attackCommandInvoker.commandData = ScriptableObject.CreateInstance<CommandData>();
-        attackCommandInvoker.commandData.commands.Add(atttackCommand);
         SetupStateMachine();
     }
 
@@ -118,7 +115,12 @@ public class PlayerController : MonoBehaviour, IEntity
             OnGrounded?.Invoke();
     }
 
-    public void Attack()
+    public void Attack(AttackData attackData)
+    {
+        hitbox.SetActive(true);
+    }
+
+    public void HandleAttackInput()
     {
         var attackCommand = attackCommandInvoker.ExecuteCommandAsync();
     }

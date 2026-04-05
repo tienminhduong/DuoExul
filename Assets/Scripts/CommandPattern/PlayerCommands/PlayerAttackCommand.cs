@@ -1,19 +1,12 @@
 using UnityEngine;
 
-public class PlayerAttackCommand : PlayerBaseCommand
+public class PlayerAttackCommand : ICommand
 {
-    public AnimationData attackAnimData = new(AnimationData.PriorityLevel.Override, "Attack1", 0.267f);
-    public PlayerAttackCommand(IEntity player) : base(player)
-    {
-    }
-
-    public override void Execute()
-    {
-    }
-
-    public override async Awaitable ExecuteAsync()
+    [SerializeField] private AttackData attackData;
+    public async Awaitable Execute(IEntity entity)
     {
         Debug.Log("PlayerAttackCommand executed");
-        await player.AnimationController.PlayAnimation(attackAnimData);
+        entity.Attack(attackData);
+        await entity.AnimationController.PlayAnimation(attackData.animationData);
     }
 }

@@ -17,7 +17,7 @@ public class PlayerInputControls : MonoBehaviour
         controls.Player.Move.canceled += ctx => player.SetDirection(Vector2.zero);
         controls.Player.Jump.performed += ctx => player.SetJump();
         controls.Player.Jump.canceled += ctx => player.SetFall();
-        controls.Player.Attack.performed += ctx => player.Attack();
+        controls.Player.Attack.performed += ctx => player.HandleAttackInput();
     }
 
     void OnDisable()
