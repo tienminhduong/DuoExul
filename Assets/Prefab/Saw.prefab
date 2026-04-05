@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6897845525996220440
+--- !u!1 &2859156749689046628
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6033747185223222130}
-  - component: {fileID: 5225538727036107697}
-  - component: {fileID: 8317737731534807721}
-  - component: {fileID: 2894230302337252519}
-  - component: {fileID: 3116815296369488532}
+  - component: {fileID: 4176779827284566328}
+  - component: {fileID: 6857665614743104620}
+  - component: {fileID: 426922811813020717}
+  - component: {fileID: 1520795797891691131}
+  - component: {fileID: 2112545708514143114}
   m_Layer: 0
-  m_Name: HealWater
+  m_Name: Saw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6033747185223222130
+--- !u!4 &4176779827284566328
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897845525996220440}
+  m_GameObject: {fileID: 2859156749689046628}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.79, y: -0.57, z: 0}
+  m_LocalPosition: {x: 3.18286, y: -0.3054, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5225538727036107697
+--- !u!212 &6857665614743104620
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897845525996220440}
+  m_GameObject: {fileID: 2859156749689046628}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,28 +82,28 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2996610571975058988, guid: f947947808abc98449fe80a6083efa1c, type: 3}
+  m_Sprite: {fileID: -6955790032328933191, guid: 209bd169c83bcef4da3f8bd2938a9f93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 14.001736, y: 4.2267084}
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8317737731534807721
+--- !u!95 &426922811813020717
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897845525996220440}
+  m_GameObject: {fileID: 2859156749689046628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4edea013cbc895b4f8d9f4c302549190, type: 2}
+  m_Controller: {fileID: 9100000, guid: 35f9aa3a4200ecc4e8344049910c1d9e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -115,13 +115,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &2894230302337252519
-BoxCollider2D:
+--- !u!58 &1520795797891691131
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897845525996220440}
+  m_GameObject: {fileID: 2859156749689046628}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -145,33 +145,23 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 14.001736, y: 4.2267084}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 2
-    adaptiveTiling: 0
-  m_AutoTiling: 1
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &3116815296369488532
+  m_Radius: 0.45
+--- !u!114 &2112545708514143114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6897845525996220440}
+  m_GameObject: {fileID: 2859156749689046628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 876fe80be308da44bacdd27018f1c2e3, type: 3}
+  m_Script: {fileID: 11500000, guid: e2474c67932dde24d9109649c8b976b5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EffectHealthPlayer
-  _healthChange: 10
-  _timeToEffect: 3
+  m_EditorClassIdentifier: Assembly-CSharp::Hazard
+  damage: 10
+  isActive: 1
