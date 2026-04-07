@@ -16,14 +16,14 @@ public class AnimationController
     {
         Debug.Log($"Crossfading to state with hash: {animationData.Hash}");
         animator.CrossFade(animationData.Hash, transitionDuration);
-        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.duration);
+        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.animDuration);
     }
 
     private AnimationData currentAnim;
     private AnimationData currentStandardAnim;
     public async Awaitable PlayAnimation(AnimationData anim, float transitionDuration = 0.1f)
     {
-        Debug.Log($"Playing animation: {anim.name} with priority {anim.priority}");
+        Debug.Log($"Playing animation: {anim.stateName} with priority {anim.priority}");
         if (anim.priority == AnimationData.PriorityLevel.Override)
         {
             if (currentAnim.priority == AnimationData.PriorityLevel.Standard)
@@ -48,7 +48,7 @@ public class AnimationController
     private async Awaitable RevertStandardAnim(float transitionDuration = 0.1f)
     {
         currentAnim = currentStandardAnim;
-        Debug.Log($"Reverting to standard animation: {currentStandardAnim.name}");
+        Debug.Log($"Reverting to standard animation: {currentStandardAnim.stateName}");
         await CrossFade(currentStandardAnim, transitionDuration);
     }
 }
@@ -62,15 +62,15 @@ public struct AnimationData
         Override = 1,
     }
     public PriorityLevel priority;
-    public string name;
-    public float duration;
+    public string stateName;
+    public float animDuration;
 
-    public readonly int Hash => Animator.StringToHash(name);
+    public readonly int Hash => Animator.StringToHash(stateName);
 
     public AnimationData(PriorityLevel priority, string name, float duration)
     {
         this.priority = priority;
-        this.name = name;
-        this.duration = duration;
+        this.stateName = name;
+        this.animDuration = duration;
     }
 }

@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour, IEntity
 
     [Header("Reference")]
     [SerializeField] private GameObject hitbox;
-    [SerializeField] private CommandInvoker attackCommandInvoker;
+    [SerializeField] private ChainCommandInvoker attackCommandInvoker;
 
 
     [Header("Debug readonly")]
@@ -122,6 +122,11 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void HandleAttackInput()
     {
-        var attackCommand = attackCommandInvoker.ExecuteCommandAsync();
+        var attackCommand = attackCommandInvoker.ExecuteCommandsAsync();
+    }
+
+    public void HandleAttackInputCancel()
+    {
+        attackCommandInvoker.PauseExecution();
     }
 }

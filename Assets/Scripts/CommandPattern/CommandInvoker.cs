@@ -11,7 +11,7 @@ public class CommandInvoker : MonoBehaviour
         entity = GetComponent<IEntity>();
     }
 
-    public async Awaitable ExecuteCommandAsync()
+    public async Awaitable ExecuteCommandsAsync()
     {
         foreach (var command in commandData.commands)
         {
