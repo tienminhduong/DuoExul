@@ -16,7 +16,7 @@ public class AnimationController
     {
         Debug.Log($"Crossfading to state with hash: {animationData.Hash}");
         animator.CrossFade(animationData.Hash, transitionDuration);
-        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.animDuration);
+        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.AnimationDuration);
     }
 
     private AnimationData currentAnim;
@@ -63,14 +63,18 @@ public struct AnimationData
     }
     public PriorityLevel priority;
     public string stateName;
-    public float animDuration;
+
+    [Tooltip("For determining animation duration only, not needed if animation is looped")]
+    public AnimationClip animationClip;
+
+    public readonly float AnimationDuration => animationClip != null ? animationClip.length : 0.1f;
 
     public readonly int Hash => Animator.StringToHash(stateName);
 
-    public AnimationData(PriorityLevel priority, string name, float duration)
+    public AnimationData(PriorityLevel priority, string stateName)
     {
         this.priority = priority;
-        this.stateName = name;
-        this.animDuration = duration;
+        this.stateName = stateName;
+        this.animationClip = null;
     }
 }

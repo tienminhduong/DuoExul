@@ -1272,7 +1272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChainCommandInvoker
   commandData: {fileID: 11400000, guid: aa7a3cbe6677f5c5784a228f9365fa6b, type: 2}
-  PauseMaxDurationInSeconds: 2
+  PauseMaxDurationInSeconds: 0.2
+  isExecuting: 0
+  isPaused: 0
+  pauseTimer: 0
 --- !u!1 &1994606804
 GameObject:
   m_ObjectHideFlags: 0

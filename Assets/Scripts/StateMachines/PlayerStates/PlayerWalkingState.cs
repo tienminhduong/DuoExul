@@ -11,7 +11,7 @@ public class PlayerWalkingState : BasePlayerState
     public override void Enter()
     {
         base.Enter();
-        var walkAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Walk", 0.1f);
+        var walkAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Walk");
         var _ = AnimationController.PlayAnimation(walkAnimData);
     }
 

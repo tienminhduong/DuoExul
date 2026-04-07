@@ -15,6 +15,6 @@ MonoBehaviour:
   label: Move2
   animationData:
     priority: 1
-    name: Attack2
-    duration: 0.267
+    stateName: Attack2
+    animationClip: {fileID: 7400000, guid: e4c601546944d83b3a37a86197f4cee6, type: 2}
   baseDamage: 10

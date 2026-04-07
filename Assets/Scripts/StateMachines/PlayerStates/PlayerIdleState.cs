@@ -1,9 +1,8 @@
 public class PlayerIdleState : BasePlayerState
 {
-    AnimationData idleAnimData = new(AnimationData.PriorityLevel.Standard, "Idle", 0.1f);
+    AnimationData idleAnimData = new(AnimationData.PriorityLevel.Standard, "Idle");
     public PlayerIdleState(PlayerController player) : base(player)
     {
-
     }
 
     override public void Enter()

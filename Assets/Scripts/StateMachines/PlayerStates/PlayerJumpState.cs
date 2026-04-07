@@ -16,7 +16,7 @@ public class PlayerJumpState : BasePlayerState
         var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y * player.Rigidbody.gravityScale) * player.Rigidbody.mass;
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-        var jumpAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Jump", 0.1f);
+        var jumpAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Jump");
         var _ = AnimationController.PlayAnimation(jumpAnimData);
     }
 
