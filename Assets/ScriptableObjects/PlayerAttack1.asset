@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94cd0d7bc832071cb7b119c3792b193, type: 3}
+  m_Name: PlayerAttack1
+  m_EditorClassIdentifier: Assembly-CSharp::CommandData
+  label: Attack1
+  commands:
+  - rid: 8106860985797575087
+  - rid: 8106860985797575045
+  - rid: 8106860985797575084
+  references:
+    version: 2
+    RefIds:
+    - rid: 8106860985797575045
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 19b2eac438a3fb4428135715ce57b50a, type: 2}
+    - rid: 8106860985797575084
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 81b415858e615c03ba3b12538b852728, type: 2}
+    - rid: 8106860985797575087
+      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 07134acff80151859883a7732e48851f, type: 2}
