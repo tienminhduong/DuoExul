@@ -1,21 +1,27 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IEntity
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public Vector2 Direction { get; private set; }
-
+    public int Direction { get; private set; }
+    public AnimationController AnimationController { get; private set; }
 
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpHeight = 6f;
     [SerializeField] private int maxJumps = 1;
 
     [SerializeField] private LayerMask groundLayer;
+
+    [Header("Reference")]
+    [SerializeField] private GameObject hitbox;
+    [SerializeField] private ChainCommandInvoker attackCommandInvoker;
 
 
     [Header("Debug readonly")]
@@ -33,6 +39,7 @@ public class PlayerController : MonoBehaviour
     {
         Rigidbody = GetComponent<Rigidbody2D>();
         Collider = GetComponent<BoxCollider2D>();
+        AnimationController = new AnimationController(GetComponentInChildren<Animator>());
 
         SetupStateMachine();
     }
@@ -43,7 +50,7 @@ public class PlayerController : MonoBehaviour
 
         stateMachine.AddState(new PlayerIdleState(this));
         stateMachine.AddState(new PlayerWalkingState(this));
-        stateMachine.AddState(new PlayerJumpState(this, jumpForce));
+        stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
 
         stateMachine.SetState<PlayerIdleState>();
@@ -59,10 +66,11 @@ public class PlayerController : MonoBehaviour
         stateMachine.ChangeState<T>();
     }
 
-    public void SetDirection(Vector2 newDirection)
+    public void SetDirection(Vector2 vector2)
     {
-        Direction = newDirection.normalized;
-        if (Direction.magnitude > 0)
+        Direction = vector2.x != 0 ? (int)Mathf.Sign(vector2.x) : 0;
+        transform.localScale = new Vector3(Direction != 0 ? -Direction : transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
             stateMachine.ChangeState<PlayerIdleState>();
@@ -86,7 +94,7 @@ public class PlayerController : MonoBehaviour
     // called in fixed update
     public void UpdateMoving()
     {
-        transform.Translate(moveSpeed * Time.fixedDeltaTime * Direction);
+        transform.Translate(Direction * moveSpeed * Time.fixedDeltaTime * Vector2.right);
     }
 
     private void FixedUpdate()
@@ -105,5 +113,20 @@ public class PlayerController : MonoBehaviour
 
         if (groundLayer.Contains(collision.gameObject))
             OnGrounded?.Invoke();
+    }
+
+    public void Attack(AttackData attackData)
+    {
+        hitbox.SetActive(true);
+    }
+
+    public void HandleAttackInput()
+    {
+        var attackCommand = attackCommandInvoker.ExecuteCommandsAsync();
+    }
+
+    public void HandleAttackInputCancel()
+    {
+        attackCommandInvoker.PauseExecution();
     }
 }

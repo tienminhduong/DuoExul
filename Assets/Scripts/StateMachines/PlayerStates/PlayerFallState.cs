@@ -13,6 +13,9 @@ public class PlayerFallState : BasePlayerState
         base.Enter();
         player.Rigidbody.gravityScale *= 2f;
         player.Rigidbody.linearVelocityY = 0f;
+
+        var fallAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Fall");
+        var _ = AnimationController.PlayAnimation(fallAnimData);
     }
 
     public override void FixedUpdate()

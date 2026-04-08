@@ -17,4 +17,18 @@ public class HealthComponent : MonoBehaviour
             OnDeath?.Invoke();
         }
     }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
+
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+    }
 }

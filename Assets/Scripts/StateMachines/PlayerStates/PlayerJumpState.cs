@@ -3,22 +3,27 @@ using UnityEngine;
 
 public class PlayerJumpState : BasePlayerState
 {
-    [ReadOnly][SerializeField] float jumpForce;
-    public PlayerJumpState(PlayerController player, float jumpForce) : base(player)
+    [ReadOnly][SerializeField] float jumpHeight;
+    public PlayerJumpState(PlayerController player, float jumpHeight) : base(player)
     {
-        this.jumpForce = jumpForce;
+        this.jumpHeight = jumpHeight;
     }
 
     public override void Enter()
     {
         base.Enter();
+        player.Rigidbody.linearVelocityY = 0;
+        var jumpForce = Mathf.Sqrt(2 * jumpHeight * -Physics2D.gravity.y * player.Rigidbody.gravityScale) * player.Rigidbody.mass;
         player.Rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        var jumpAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Jump");
+        var _ = AnimationController.PlayAnimation(jumpAnimData);
     }
 
     public override void Update()
     {
         base.Update();
-        if (player.Rigidbody.linearVelocityY <= 0)
+        if (player.Rigidbody.linearVelocityY < 0)
             player.ChangeState<PlayerFallState>();
     }
 

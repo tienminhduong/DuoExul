@@ -1,0 +1,4872 @@
+fileFormatVersion: 2
+guid: b80fecb41c3df59e18477eac26c89031
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5861600460791154614
+    second: silksong_reaper_0
+  - first:
+      213: 5259181031083320685
+    second: silksong_reaper_1
+  - first:
+      213: 691106758639815742
+    second: silksong_reaper_2
+  - first:
+      213: 6697417650902511715
+    second: silksong_reaper_3
+  - first:
+      213: 2991538253826375078
+    second: silksong_reaper_4
+  - first:
+      213: -2139366265451484621
+    second: silksong_reaper_5
+  - first:
+      213: 1153336567030579865
+    second: silksong_reaper_6
+  - first:
+      213: 1053980281618779510
+    second: silksong_reaper_7
+  - first:
+      213: 9201460187495179383
+    second: silksong_reaper_8
+  - first:
+      213: 3885311507148188693
+    second: silksong_reaper_9
+  - first:
+      213: 8744658617698153256
+    second: silksong_reaper_10
+  - first:
+      213: -8876155025262132041
+    second: silksong_reaper_11
+  - first:
+      213: 3287287247231238069
+    second: silksong_reaper_12
+  - first:
+      213: -5085281808368372604
+    second: silksong_reaper_13
+  - first:
+      213: -397561376058386588
+    second: silksong_reaper_14
+  - first:
+      213: 9141513967625099328
+    second: silksong_reaper_15
+  - first:
+      213: 8778099580629424289
+    second: silksong_reaper_16
+  - first:
+      213: -8831959875746599692
+    second: silksong_reaper_17
+  - first:
+      213: 7988362438025927230
+    second: silksong_reaper_18
+  - first:
+      213: -6125916594988324916
+    second: silksong_reaper_19
+  - first:
+      213: 8216395512040131131
+    second: silksong_reaper_20
+  - first:
+      213: -8133737566654181801
+    second: silksong_reaper_21
+  - first:
+      213: -4438238601496084733
+    second: silksong_reaper_22
+  - first:
+      213: 426029948546256186
+    second: silksong_reaper_23
+  - first:
+      213: 3497720608970550010
+    second: silksong_reaper_24
+  - first:
+      213: -7288155313937038793
+    second: silksong_reaper_25
+  - first:
+      213: -2263135686158228253
+    second: silksong_reaper_26
+  - first:
+      213: -854945266345058135
+    second: silksong_reaper_27
+  - first:
+      213: 4541250740119498634
+    second: silksong_reaper_28
+  - first:
+      213: -2678481368144975835
+    second: silksong_reaper_29
+  - first:
+      213: 3303728520019050725
+    second: silksong_reaper_30
+  - first:
+      213: -5525223830511553996
+    second: silksong_reaper_31
+  - first:
+      213: -3975795916795342160
+    second: silksong_reaper_32
+  - first:
+      213: 4047475705918215628
+    second: silksong_reaper_33
+  - first:
+      213: 4831488547604511360
+    second: silksong_reaper_34
+  - first:
+      213: -4072882499693597986
+    second: silksong_reaper_35
+  - first:
+      213: -116689296112271729
+    second: silksong_reaper_36
+  - first:
+      213: -6159866130172353410
+    second: silksong_reaper_37
+  - first:
+      213: -7699146941855351255
+    second: silksong_reaper_38
+  - first:
+      213: -5678705666442196330
+    second: silksong_reaper_39
+  - first:
+      213: -2556239635656508286
+    second: silksong_reaper_40
+  - first:
+      213: 3260243873584111942
+    second: silksong_reaper_41
+  - first:
+      213: 5829822261055071548
+    second: silksong_reaper_42
+  - first:
+      213: 7359974817313253973
+    second: silksong_reaper_43
+  - first:
+      213: 7093668582034213801
+    second: silksong_reaper_44
+  - first:
+      213: 3245856625019747147
+    second: silksong_reaper_45
+  - first:
+      213: 2442814973292204005
+    second: silksong_reaper_46
+  - first:
+      213: -7920359922950130411
+    second: silksong_reaper_47
+  - first:
+      213: -1021432830177358136
+    second: silksong_reaper_48
+  - first:
+      213: -5402596892206589470
+    second: silksong_reaper_49
+  - first:
+      213: 5227279731527699765
+    second: silksong_reaper_50
+  - first:
+      213: 5348776808176437495
+    second: silksong_reaper_51
+  - first:
+      213: 2752762161755529877
+    second: silksong_reaper_52
+  - first:
+      213: 7784174521691573100
+    second: silksong_reaper_53
+  - first:
+      213: -6663587272901902050
+    second: silksong_reaper_54
+  - first:
+      213: -2159167008332589202
+    second: silksong_reaper_55
+  - first:
+      213: 7924518335000300576
+    second: silksong_reaper_56
+  - first:
+      213: 5542331013270294185
+    second: silksong_reaper_57
+  - first:
+      213: -1940306018312217500
+    second: silksong_reaper_58
+  - first:
+      213: -4114233288454679299
+    second: silksong_reaper_59
+  - first:
+      213: -1873572960124132373
+    second: silksong_reaper_60
+  - first:
+      213: -6147840376981704496
+    second: silksong_reaper_61
+  - first:
+      213: 2836844699494450071
+    second: silksong_reaper_62
+  - first:
+      213: 3306240855810001076
+    second: silksong_reaper_63
+  - first:
+      213: 6958151889598344832
+    second: silksong_reaper_64
+  - first:
+      213: -605473648538865539
+    second: silksong_reaper_65
+  - first:
+      213: -6747646769497082882
+    second: silksong_reaper_66
+  - first:
+      213: -1106389512906531646
+    second: silksong_reaper_67
+  - first:
+      213: -8643863960265023498
+    second: silksong_reaper_68
+  - first:
+      213: -888587146615191096
+    second: silksong_reaper_69
+  - first:
+      213: 2709777247715592983
+    second: silksong_reaper_70
+  - first:
+      213: 4863745659674942629
+    second: silksong_reaper_71
+  - first:
+      213: 58829725900539424
+    second: silksong_reaper_72
+  - first:
+      213: -3814128165899114934
+    second: silksong_reaper_73
+  - first:
+      213: 3437127386500415578
+    second: silksong_reaper_74
+  - first:
+      213: -6472878563716135945
+    second: silksong_reaper_75
+  - first:
+      213: 9027832033315089430
+    second: silksong_reaper_76
+  - first:
+      213: 8776713674374837734
+    second: silksong_reaper_77
+  - first:
+      213: -7822121528594891015
+    second: silksong_reaper_78
+  - first:
+      213: 3750993483835128586
+    second: silksong_reaper_79
+  - first:
+      213: 7441691001496334204
+    second: silksong_reaper_80
+  - first:
+      213: 9054165731541989828
+    second: silksong_reaper_81
+  - first:
+      213: 5364231524655586814
+    second: silksong_reaper_82
+  - first:
+      213: 6995007682248533383
+    second: silksong_reaper_83
+  - first:
+      213: 1293993659753366523
+    second: silksong_reaper_84
+  - first:
+      213: -4615474119705211524
+    second: silksong_reaper_85
+  - first:
+      213: -3898155972959558498
+    second: silksong_reaper_86
+  - first:
+      213: 2145976442323467616
+    second: silksong_reaper_87
+  - first:
+      213: 2330605607314006933
+    second: silksong_reaper_88
+  - first:
+      213: -981176307504654904
+    second: silksong_reaper_89
+  - first:
+      213: -5642375830256480218
+    second: silksong_reaper_90
+  - first:
+      213: 862205119869681818
+    second: silksong_reaper_91
+  - first:
+      213: -7198711976673485286
+    second: silksong_reaper_92
+  - first:
+      213: 2555714306855865122
+    second: silksong_reaper_93
+  - first:
+      213: -4562446831308101577
+    second: silksong_reaper_94
+  - first:
+      213: -1041107433569869190
+    second: silksong_reaper_95
+  - first:
+      213: -2540610464625656097
+    second: silksong_reaper_96
+  - first:
+      213: 30300991761868479
+    second: silksong_reaper_97
+  - first:
+      213: 5745698667858283744
+    second: silksong_reaper_98
+  - first:
+      213: -436267726868287757
+    second: silksong_reaper_99
+  - first:
+      213: 5960313025844826915
+    second: silksong_reaper_100
+  - first:
+      213: -5910861385137908935
+    second: silksong_reaper_101
+  - first:
+      213: -8690982071157910483
+    second: silksong_reaper_102
+  - first:
+      213: 948764839015401587
+    second: silksong_reaper_103
+  - first:
+      213: 185733616244621418
+    second: silksong_reaper_104
+  - first:
+      213: -3097947872632809929
+    second: silksong_reaper_105
+  - first:
+      213: 5370873681054390696
+    second: silksong_reaper_106
+  - first:
+      213: 8106487115737201477
+    second: silksong_reaper_107
+  - first:
+      213: 6249948842874071056
+    second: silksong_reaper_108
+  - first:
+      213: -975441565070059919
+    second: silksong_reaper_109
+  - first:
+      213: 7396442781883938132
+    second: silksong_reaper_110
+  - first:
+      213: 2255153137516682359
+    second: silksong_reaper_111
+  - first:
+      213: -2184593203152273148
+    second: silksong_reaper_112
+  - first:
+      213: 407223414421675926
+    second: silksong_reaper_113
+  - first:
+      213: 5556691653333491396
+    second: silksong_reaper_114
+  - first:
+      213: -6198368695831327978
+    second: silksong_reaper_115
+  - first:
+      213: 683166095370462057
+    second: silksong_reaper_116
+  - first:
+      213: 1812640422558000885
+    second: silksong_reaper_117
+  - first:
+      213: -6694553000820103261
+    second: silksong_reaper_118
+  - first:
+      213: 8705877424888769506
+    second: silksong_reaper_119
+  - first:
+      213: 5268830238472578193
+    second: silksong_reaper_120
+  - first:
+      213: 1277746957636938834
+    second: silksong_reaper_121
+  - first:
+      213: -3653345221031401314
+    second: silksong_reaper_122
+  - first:
+      213: -5247080306851639532
+    second: silksong_reaper_123
+  - first:
+      213: 5026216067891709740
+    second: silksong_reaper_124
+  - first:
+      213: -2271759959408636002
+    second: silksong_reaper_125
+  - first:
+      213: -710894535779621036
+    second: silksong_reaper_126
+  - first:
+      213: 4371939516211126789
+    second: silksong_reaper_127
+  - first:
+      213: 3387167745986133238
+    second: silksong_reaper_128
+  - first:
+      213: -7664419324161060127
+    second: silksong_reaper_129
+  - first:
+      213: -2363678532978337534
+    second: silksong_reaper_130
+  - first:
+      213: 912683584807795317
+    second: silksong_reaper_131
+  - first:
+      213: -4197510863932958288
+    second: silksong_reaper_132
+  - first:
+      213: -3019325987299112542
+    second: silksong_reaper_133
+  - first:
+      213: 5878217798931498104
+    second: silksong_reaper_134
+  - first:
+      213: -5552157260213794010
+    second: silksong_reaper_135
+  - first:
+      213: 7801421649910929290
+    second: silksong_reaper_136
+  - first:
+      213: -3322622751753395294
+    second: silksong_reaper_137
+  - first:
+      213: -9142781950180741716
+    second: silksong_reaper_138
+  - first:
+      213: -4126830296926467042
+    second: silksong_reaper_139
+  - first:
+      213: -222047047147796620
+    second: silksong_reaper_140
+  - first:
+      213: 3386838725868152385
+    second: silksong_reaper_141
+  - first:
+      213: -6380742122318549304
+    second: silksong_reaper_142
+  - first:
+      213: 9045132183463463283
+    second: silksong_reaper_143
+  - first:
+      213: -2630851293567491545
+    second: silksong_reaper_144
+  - first:
+      213: 5232356035782907869
+    second: silksong_reaper_145
+  - first:
+      213: -748952953552936442
+    second: silksong_reaper_146
+  - first:
+      213: 1949163329127525461
+    second: silksong_reaper_147
+  - first:
+      213: -1828427860865603871
+    second: silksong_reaper_148
+  - first:
+      213: 5251028833717939767
+    second: silksong_reaper_149
+  - first:
+      213: 2889451060016349613
+    second: silksong_reaper_150
+  - first:
+      213: 7249666445219459903
+    second: silksong_reaper_151
+  - first:
+      213: 2094990755765869925
+    second: silksong_reaper_152
+  - first:
+      213: 5278294889936888251
+    second: silksong_reaper_153
+  - first:
+      213: 3672489438643910472
+    second: silksong_reaper_154
+  - first:
+      213: -5147718449847360197
+    second: silksong_reaper_155
+  - first:
+      213: 5778988247856974870
+    second: silksong_reaper_156
+  - first:
+      213: 7638194228727793606
+    second: silksong_reaper_157
+  - first:
+      213: 6890255483310683860
+    second: silksong_reaper_158
+  - first:
+      213: -8718604744263967348
+    second: silksong_reaper_159
+  - first:
+      213: 1397407140537322022
+    second: silksong_reaper_160
+  - first:
+      213: 8382868632652015143
+    second: silksong_reaper_161
+  - first:
+      213: -5550090021610952041
+    second: silksong_reaper_162
+  - first:
+      213: 8525417168798920017
+    second: silksong_reaper_163
+  - first:
+      213: 8250902038792850745
+    second: silksong_reaper_164
+  - first:
+      213: -5860767197429583367
+    second: silksong_reaper_165
+  - first:
+      213: -766385733163051358
+    second: silksong_reaper_166
+  - first:
+      213: -7452230815086657904
+    second: silksong_reaper_167
+  - first:
+      213: -3507091668392238096
+    second: silksong_reaper_168
+  - first:
+      213: 3913017887341498632
+    second: silksong_reaper_169
+  - first:
+      213: 4161789685470955941
+    second: silksong_reaper_170
+  - first:
+      213: -149468239862260583
+    second: silksong_reaper_171
+  - first:
+      213: -6091806866188558983
+    second: silksong_reaper_172
+  - first:
+      213: -1990095408317775902
+    second: silksong_reaper_173
+  - first:
+      213: -5385511780101054389
+    second: silksong_reaper_174
+  - first:
+      213: -7576920033172321567
+    second: silksong_reaper_175
+  - first:
+      213: -2452668395501893924
+    second: silksong_reaper_176
+  - first:
+      213: 8613431797808688097
+    second: silksong_reaper_177
+  - first:
+      213: -1575990920592911445
+    second: silksong_reaper_178
+  - first:
+      213: 8474693167139085522
+    second: silksong_reaper_179
+  - first:
+      213: 5052272583786892409
+    second: silksong_reaper_180
+  - first:
+      213: 7512411192470746693
+    second: silksong_reaper_181
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: silksong_reaper_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2135
+        width: 116
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a48f64fdf6967aea0800000000000000
+      internalID: -5861600460791154614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2076
+        width: 185
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65a13f884d5cf840800000000000000
+      internalID: 5259181031083320685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2098
+        width: 167
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c09927fed479900800000000000000
+      internalID: 691106758639815742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_3
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 2078
+        width: 166
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360b97a7ed102fc50800000000000000
+      internalID: 6697417650902511715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_4
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2163
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad30572134148920800000000000000
+      internalID: 2991538253826375078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1925
+        width: 130
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a6f4767b17f42e0800000000000000
+      internalID: -2139366265451484621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_6
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2112
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99283504f79710010800000000000000
+      internalID: 1153336567030579865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_7
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 2029
+        width: 166
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d472e5b7d70ae00800000000000000
+      internalID: 1053980281618779510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_8
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2043
+        width: 188
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774ac820a4722bf70800000000000000
+      internalID: 9201460187495179383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_9
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 2023
+        width: 118
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c2e410b366be530800000000000000
+      internalID: 3885311507148188693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_10
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 2127
+        width: 6
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823f4fd7ea44b5970800000000000000
+      internalID: 8744658617698153256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_11
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1949
+        width: 214
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4c3fb480091d480800000000000000
+      internalID: -8876155025262132041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_12
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2094
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfb3e5a55ace9d20800000000000000
+      internalID: 3287287247231238069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_13
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1974
+        width: 169
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484727563237d69b0800000000000000
+      internalID: -5085281808368372604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1945
+        width: 202
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467df9be8049b7af0800000000000000
+      internalID: -397561376058386588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_15
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1955
+        width: 181
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048d09d058e2dde70800000000000000
+      internalID: 9141513967625099328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_16
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1858
+        width: 129
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a81c6a6f0312d970800000000000000
+      internalID: 8778099580629424289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_17
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1832
+        width: 232
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcee9769439e6580800000000000000
+      internalID: -8831959875746599692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_18
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1819
+        width: 113
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3adb9f205d5cde60800000000000000
+      internalID: 7988362438025927230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_19
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1946
+        width: 131
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7ec08305f5cfaa0800000000000000
+      internalID: -6125916594988324916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_20
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1903
+        width: 100
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a04459f20860270800000000000000
+      internalID: 8216395512040131131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_21
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 1983
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ec35b07c82f1f80800000000000000
+      internalID: -8133737566654181801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_22
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1850
+        width: 134
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f3669b1853862c0800000000000000
+      internalID: -4438238601496084733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_23
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1971
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d07c22bff89e500800000000000000
+      internalID: 426029948546256186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_24
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 1855
+        width: 134
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaa045bc566a8030800000000000000
+      internalID: 3497720608970550010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_25
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1817
+        width: 186
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73248e43b554bda90800000000000000
+      internalID: -7288155313937038793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_26
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1842
+        width: 121
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e46704851ab790e0800000000000000
+      internalID: -2263135686158228253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_27
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1951
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0e9195fcf9224f0800000000000000
+      internalID: -854945266345058135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_28
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1850
+        width: 112
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f6dc0dc73c50f30800000000000000
+      internalID: 4541250740119498634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_29
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1943
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528673a036f14dad0800000000000000
+      internalID: -2678481368144975835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_30
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1793
+        width: 181
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e00016c59339dd20800000000000000
+      internalID: 3303728520019050725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_31
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1822
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432f5d533367253b0800000000000000
+      internalID: -5525223830511553996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_32
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1943
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b217f7ada223d8c0800000000000000
+      internalID: -3975795916795342160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_33
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 1915
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc55748c5b58b2830800000000000000
+      internalID: 4047475705918215628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_34
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1931
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ab5585c35ec0340800000000000000
+      internalID: 4831488547604511360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1768
+        width: 193
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edaabd112f63a77c0800000000000000
+      internalID: -4072882499693597986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_36
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1923
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e332414bf616ef0800000000000000
+      internalID: -116689296112271729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_37
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1919
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74ed171462c38aa0800000000000000
+      internalID: -6159866130172353410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_38
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1907
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e3d21f5a2272590800000000000000
+      internalID: -7699146941855351255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_39
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1879
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a07bf884f2131b0800000000000000
+      internalID: -5678705666442196330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_40
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1883
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c7beb4899668cd0800000000000000
+      internalID: -2556239635656508286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_41
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1714
+        width: 297
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641ef1e8786be3d20800000000000000
+      internalID: 3260243873584111942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_42
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1867
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c352add6570b7e050800000000000000
+      internalID: 5829822261055071548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_43
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1673
+        width: 142
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ae6cdf912e32660800000000000000
+      internalID: 7359974817313253973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_44
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1858
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab8f72ddf5c17260800000000000000
+      internalID: 7093668582034213801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_45
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1823
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b762637699b0d20800000000000000
+      internalID: 3245856625019747147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_46
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1687
+        width: 153
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef461f864f96e120800000000000000
+      internalID: 2442814973292204005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_47
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1676
+        width: 159
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515315b2d9a351290800000000000000
+      internalID: -7920359922950130411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_48
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1811
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce4b53b04423d1f0800000000000000
+      internalID: -1021432830177358136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_49
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1689
+        width: 169
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9956f20ce1605b0800000000000000
+      internalID: -5402596892206589470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_50
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1662
+        width: 108
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53dce4378370b8840800000000000000
+      internalID: 5227279731527699765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1610
+        width: 201
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f844320b2caa3a40800000000000000
+      internalID: 5348776808176437495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_52
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1623
+        width: 186
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5922392f996c33620800000000000000
+      internalID: 2752762161755529877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_53
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1645
+        width: 179
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b82133c71f60c60800000000000000
+      internalID: 7784174521691573100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_54
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1667
+        width: 178
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e114ed43eae2683a0800000000000000
+      internalID: -6663587272901902050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_55
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1556
+        width: 206
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67d791bb091902e0800000000000000
+      internalID: -2159167008332589202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_56
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1503
+        width: 132
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c43c5907b89fd60800000000000000
+      internalID: 7924518335000300576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_57
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1677
+        width: 163
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae4b9921b05aec40800000000000000
+      internalID: 5542331013270294185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_58
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1483
+        width: 187
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c92fed4f5a215e0800000000000000
+      internalID: -1940306018312217500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_59
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 1526
+        width: 151
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4529e4f9e47e6c0800000000000000
+      internalID: -4114233288454679299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_60
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1500
+        width: 135
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be32603c15bbff5e0800000000000000
+      internalID: -1873572960124132373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_61
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1662
+        width: 170
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0b332ffbb7eaaa0800000000000000
+      internalID: -6147840376981704496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_62
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1430
+        width: 210
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7930154593f7e5720800000000000000
+      internalID: 2836844699494450071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_63
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1443
+        width: 198
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b840788a8022ed20800000000000000
+      internalID: 3306240855810001076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_64
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1475
+        width: 189
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ee8b81742509060800000000000000
+      internalID: 6958151889598344832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_65
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1518
+        width: 187
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d703bf1bcece897f0800000000000000
+      internalID: -605473648538865539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_66
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1445
+        width: 125
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef37052830b8b52a0800000000000000
+      internalID: -6747646769497082882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_67
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 1396
+        width: 177
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc1df3999055a0f0800000000000000
+      internalID: -1106389512906531646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_68
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1542
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff1a997683da0880800000000000000
+      internalID: -8643863960265023498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_69
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1548
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c90606b2ba1ba3f0800000000000000
+      internalID: -888587146615191096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_70
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 1520
+        width: 174
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b068ebc001b9520800000000000000
+      internalID: 2709777247715592983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_71
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1344
+        width: 172
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acd5c288ee7f7340800000000000000
+      internalID: 4863745659674942629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_72
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1513
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0260982f25101d000800000000000000
+      internalID: 58829725900539424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_73
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1511
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4665c724ae711bc0800000000000000
+      internalID: -3814128165899114934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_74
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 1326
+        width: 144
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50cf18b52123bf20800000000000000
+      internalID: 3437127386500415578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_75
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 1385
+        width: 201
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f38577bd37bb26a0800000000000000
+      internalID: -6472878563716135945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_76
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1380
+        width: 156
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c63ad176d494d70800000000000000
+      internalID: 9027832033315089430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_77
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1359
+        width: 152
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5fc68f5962dc970800000000000000
+      internalID: 8776713674374837734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_78
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1499
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe7a22c9ed327390800000000000000
+      internalID: -7822121528594891015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_79
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1265
+        width: 163
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b3cce23b43e0430800000000000000
+      internalID: 3750993483835128586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_80
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1239
+        width: 145
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fe860c982364760800000000000000
+      internalID: 7441691001496334204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_81
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1451
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9331603cbd6ad70800000000000000
+      internalID: 9054165731541989828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_82
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1260
+        width: 191
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd5c089624917a40800000000000000
+      internalID: 5364231524655586814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_83
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1240
+        width: 154
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7856d850d62431160800000000000000
+      internalID: 6995007682248533383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_84
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1443
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3053fa06035f110800000000000000
+      internalID: 1293993659753366523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_85
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1255
+        width: 233
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d46f0fdba82ffb0800000000000000
+      internalID: -4615474119705211524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_86
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1427
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94ada0cbc7f6e9c0800000000000000
+      internalID: -3898155972959558498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_87
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1391
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dfb05543a08cd10800000000000000
+      internalID: 2145976442323467616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1313
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5932c77a379f75020800000000000000
+      internalID: 2330605607314006933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_89
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1324
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5d729c8592262f0800000000000000
+      internalID: -981176307504654904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_90
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1163
+        width: 186
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6201054b31142b1b0800000000000000
+      internalID: -5642375830256480218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_91
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1188
+        width: 148
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a900b550dfa27fb00800000000000000
+      internalID: 862205119869681818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_92
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1062
+        width: 175
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ed60ef899091c90800000000000000
+      internalID: -7198711976673485286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_93
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1131
+        width: 139
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b078f0f98b77320800000000000000
+      internalID: 2555714306855865122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_94
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1132
+        width: 126
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7382641a7ceeea0c0800000000000000
+      internalID: -4562446831308101577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_95
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1095
+        width: 225
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72ac012e4e3d81f0800000000000000
+      internalID: -1041107433569869190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 956
+        width: 307
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdef85f3e30fdbcd0800000000000000
+      internalID: -2540610464625656097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_97
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1056
+        width: 212
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6ee4a6796ab6000800000000000000
+      internalID: 30300991761868479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_98
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1056
+        width: 110
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecc0241f72dcbf40800000000000000
+      internalID: 5745698667858283744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_99
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1245
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe6c0950d012f9f0800000000000000
+      internalID: -436267726868287757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_100
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1252
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3235d9f2e1947b250800000000000000
+      internalID: 5960313025844826915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_101
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1037
+        width: 173
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933184623e668fda0800000000000000
+      internalID: -5910861385137908935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_102
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1007
+        width: 142
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2418536add636780800000000000000
+      internalID: -8690982071157910483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_103
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 1230
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378c4e42890ba2d00800000000000000
+      internalID: 948764839015401587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_104
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 981
+        width: 170
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a600c1b6dbbd39200800000000000000
+      internalID: 185733616244621418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_105
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 1190
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7365b0fc2d0e105d0800000000000000
+      internalID: -3097947872632809929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_106
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 955
+        width: 216
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9ddb4282d298a40800000000000000
+      internalID: 5370873681054390696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_107
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1151
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bfbcde417008070800000000000000
+      internalID: 8106487115737201477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_108
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1019
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0186fd3eb574cb650800000000000000
+      internalID: 6249948842874071056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_109
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1115
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17619de80198672f0800000000000000
+      internalID: -975441565070059919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_110
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 891
+        width: 116
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455b1b7a58175a660800000000000000
+      internalID: 7396442781883938132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_111
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1120
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c1acb84d9eb4f10800000000000000
+      internalID: 2255153137516682359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_112
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 798
+        width: 209
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40140636e04cea1e0800000000000000
+      internalID: -2184593203152273148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_113
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1086
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f53d0b98fb6a500800000000000000
+      internalID: 407223414421675926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_114
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 1079
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce125b3e955d1d40800000000000000
+      internalID: 5556691653333491396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_115
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 849
+        width: 135
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b8212f288faf9a0800000000000000
+      internalID: -6198368695831327978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_116
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 714
+        width: 262
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963a525b1f71b7900800000000000000
+      internalID: 683166095370462057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_117
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1039
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6651c4cdac72910800000000000000
+      internalID: 1812640422558000885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_118
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7a718d38b2813a0800000000000000
+      internalID: -6694553000820103261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_119
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1010
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb6698646d71d870800000000000000
+      internalID: 8705877424888769506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_120
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1020
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194aef9bf25ae1940800000000000000
+      internalID: 5268830238472578193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_121
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1014
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c29c296187bb110800000000000000
+      internalID: 1277746957636938834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_122
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1003
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e986d82b0e5bc4dc0800000000000000
+      internalID: -3653345221031401314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_123
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1011
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f092ad240ae27b0800000000000000
+      internalID: -5247080306851639532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_124
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 1007
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27cb0b32e4b0c540800000000000000
+      internalID: 5026216067891709740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_125
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1011
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f0e7c6a561970e0800000000000000
+      internalID: -2271759959408636002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_126
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 787
+        width: 170
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457e61aaf256226f0800000000000000
+      internalID: -710894535779621036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_127
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 694
+        width: 123
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502e14393df3cac30800000000000000
+      internalID: 4371939516211126789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_128
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcf9267e13a10f20800000000000000
+      internalID: 3387167745986133238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_129
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1003
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e29db58b3382a590800000000000000
+      internalID: -7664419324161060127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_130
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 975
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2091c96c5e6823fd0800000000000000
+      internalID: -2363678532978337534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_131
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 796
+        width: 159
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a7cc082e08aac00800000000000000
+      internalID: 912683584807795317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_132
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 792
+        width: 175
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9de6ecb127fb5c0800000000000000
+      internalID: -4197510863932958288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_133
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 959
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a94ee9f2033916d0800000000000000
+      internalID: -3019325987299112542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 286
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874c0b9a1ff939150800000000000000
+      internalID: 5878217798931498104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_135
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 895
+        width: 13
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62bc9df6366c2f2b0800000000000000
+      internalID: -5552157260213794010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_136
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 647
+        width: 89
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a879bf928a7344c60800000000000000
+      internalID: 7801421649910929290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_137
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 751
+        width: 220
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3ab17163ca3e1d0800000000000000
+      internalID: -3322622751753395294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_138
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 938
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cadaf90c1405e1180800000000000000
+      internalID: -9142781950180741716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_139
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 903
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cc067b5bd8ab6c0800000000000000
+      internalID: -4126830296926467042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_140
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 916
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477c45713612becf0800000000000000
+      internalID: -222047047147796620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_141
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 666
+        width: 130
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14668ee70e7700f20800000000000000
+      internalID: 3386838725868152385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_142
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 887
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cea4dba8dc0377a0800000000000000
+      internalID: -6380742122318549304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_143
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 867
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3790bc53cc3c68d70800000000000000
+      internalID: 9045132183463463283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_144
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 825
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7226806ffa65d7bd0800000000000000
+      internalID: -2630851293567491545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 321
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd71633a7101d9840800000000000000
+      internalID: 5232356035782907869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_146
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 343
+        width: 47
+        height: 387
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6026ff1c14f2b95f0800000000000000
+      internalID: -748952953552936442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_147
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 259
+        width: 256
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c2dd188b1dc0b10800000000000000
+      internalID: 1949163329127525461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_148
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 332
+        width: 104
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6ada74c8e10a6e0800000000000000
+      internalID: -1828427860865603871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_149
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 330
+        width: 233
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e671337e66fd840800000000000000
+      internalID: 5251028833717939767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_150
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 333
+        width: 94
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1862c1e64691820800000000000000
+      internalID: 2889451060016349613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_151
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 599
+        width: 267
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33ff57b83dfb9460800000000000000
+      internalID: 7249666445219459903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_152
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 577
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56dd62d1ef6e21d10800000000000000
+      internalID: 2094990755765869925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_153
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 282
+        width: 181
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb1a27e9c35404940800000000000000
+      internalID: 5278294889936888251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_154
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 282
+        width: 121
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8477ebfcfad47f230800000000000000
+      internalID: 3672489438643910472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_155
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 391
+        width: 178
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35af19f751af88b0800000000000000
+      internalID: -5147718449847360197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_156
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 412
+        width: 188
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c0caa6137133050800000000000000
+      internalID: 5778988247856974870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_157
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 558
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c742c0ae21500a60800000000000000
+      internalID: 7638194228727793606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_158
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 528
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6bb6e1bda1f9f50800000000000000
+      internalID: 6890255483310683860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_159
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 506
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d5c11ad2b410780800000000000000
+      internalID: -8718604744263967348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_160
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 371
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a425af366946310800000000000000
+      internalID: 1397407140537322022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_161
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 333
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726ecf76b9ee55470800000000000000
+      internalID: 8382868632652015143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_162
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 346
+        width: 53
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a607ee78e1af2b0800000000000000
+      internalID: -5550090021610952041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_163
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 3
+        width: 198
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15da644debd505670800000000000000
+      internalID: 8525417168798920017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_164
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 0
+        width: 115
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d4bca60b7118270800000000000000
+      internalID: 8250902038792850745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_165
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 346
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1b2fd194f5aaea0800000000000000
+      internalID: -5860767197429583367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_166
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 347
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a693e57c304d55f0800000000000000
+      internalID: -766385733163051358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_167
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 374
+        height: 345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e3a8aae8b549890800000000000000
+      internalID: -7452230815086657904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_168
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 335
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3afbe75be445fc0800000000000000
+      internalID: -3507091668392238096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_169
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 0
+        width: 357
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8015db65905dd4630800000000000000
+      internalID: 3913017887341498632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_170
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 339
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a981683ba5a1c930800000000000000
+      internalID: 4161789685470955941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_171
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 327
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c9ec18d6bfcedf0800000000000000
+      internalID: -149468239862260583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_172
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 325
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d9b845eed857ba0800000000000000
+      internalID: -6091806866188558983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_173
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 323
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef351625c2c164e0800000000000000
+      internalID: -1990095408317775902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_174
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 345
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b402565d191d245b0800000000000000
+      internalID: -5385511780101054389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_175
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 308
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea0933cf5f59d690800000000000000
+      internalID: -7576920033172321567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_176
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 281
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6484ec61f56fdd0800000000000000
+      internalID: -2452668395501893924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_177
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 7
+        width: 299
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebe07d859e098770800000000000000
+      internalID: 8613431797808688097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_178
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 235
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba391d09b94f02ae0800000000000000
+      internalID: -1575990920592911445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_179
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 238
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc51cfd8882c9570800000000000000
+      internalID: 8474693167139085522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_180
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 355
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c001995274d1640800000000000000
+      internalID: 5052272583786892409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_181
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 0
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54633e55d22714860800000000000000
+      internalID: 7512411192470746693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: silksong_reaper_182
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1799
+        width: 164
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d11ae7d3546239bbb87a517482760a
+      internalID: 1074693000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d12a37ae622b404c1bc910494d8e4e63
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      silksong_reaper_0: -5861600460791154614
+      silksong_reaper_1: 5259181031083320685
+      silksong_reaper_10: 8744658617698153256
+      silksong_reaper_100: 5960313025844826915
+      silksong_reaper_101: -5910861385137908935
+      silksong_reaper_102: -8690982071157910483
+      silksong_reaper_103: 948764839015401587
+      silksong_reaper_104: 185733616244621418
+      silksong_reaper_105: -3097947872632809929
+      silksong_reaper_106: 5370873681054390696
+      silksong_reaper_107: 8106487115737201477
+      silksong_reaper_108: 6249948842874071056
+      silksong_reaper_109: -975441565070059919
+      silksong_reaper_11: -8876155025262132041
+      silksong_reaper_110: 7396442781883938132
+      silksong_reaper_111: 2255153137516682359
+      silksong_reaper_112: -2184593203152273148
+      silksong_reaper_113: 407223414421675926
+      silksong_reaper_114: 5556691653333491396
+      silksong_reaper_115: -6198368695831327978
+      silksong_reaper_116: 683166095370462057
+      silksong_reaper_117: 1812640422558000885
+      silksong_reaper_118: -6694553000820103261
+      silksong_reaper_119: 8705877424888769506
+      silksong_reaper_12: 3287287247231238069
+      silksong_reaper_120: 5268830238472578193
+      silksong_reaper_121: 1277746957636938834
+      silksong_reaper_122: -3653345221031401314
+      silksong_reaper_123: -5247080306851639532
+      silksong_reaper_124: 5026216067891709740
+      silksong_reaper_125: -2271759959408636002
+      silksong_reaper_126: -710894535779621036
+      silksong_reaper_127: 4371939516211126789
+      silksong_reaper_128: 3387167745986133238
+      silksong_reaper_129: -7664419324161060127
+      silksong_reaper_13: -5085281808368372604
+      silksong_reaper_130: -2363678532978337534
+      silksong_reaper_131: 912683584807795317
+      silksong_reaper_132: -4197510863932958288
+      silksong_reaper_133: -3019325987299112542
+      silksong_reaper_134: 5878217798931498104
+      silksong_reaper_135: -5552157260213794010
+      silksong_reaper_136: 7801421649910929290
+      silksong_reaper_137: -3322622751753395294
+      silksong_reaper_138: -9142781950180741716
+      silksong_reaper_139: -4126830296926467042
+      silksong_reaper_14: -397561376058386588
+      silksong_reaper_140: -222047047147796620
+      silksong_reaper_141: 3386838725868152385
+      silksong_reaper_142: -6380742122318549304
+      silksong_reaper_143: 9045132183463463283
+      silksong_reaper_144: -2630851293567491545
+      silksong_reaper_145: 5232356035782907869
+      silksong_reaper_146: -748952953552936442
+      silksong_reaper_147: 1949163329127525461
+      silksong_reaper_148: -1828427860865603871
+      silksong_reaper_149: 5251028833717939767
+      silksong_reaper_15: 9141513967625099328
+      silksong_reaper_150: 2889451060016349613
+      silksong_reaper_151: 7249666445219459903
+      silksong_reaper_152: 2094990755765869925
+      silksong_reaper_153: 5278294889936888251
+      silksong_reaper_154: 3672489438643910472
+      silksong_reaper_155: -5147718449847360197
+      silksong_reaper_156: 5778988247856974870
+      silksong_reaper_157: 7638194228727793606
+      silksong_reaper_158: 6890255483310683860
+      silksong_reaper_159: -8718604744263967348
+      silksong_reaper_16: 8778099580629424289
+      silksong_reaper_160: 1397407140537322022
+      silksong_reaper_161: 8382868632652015143
+      silksong_reaper_162: -5550090021610952041
+      silksong_reaper_163: 8525417168798920017
+      silksong_reaper_164: 8250902038792850745
+      silksong_reaper_165: -5860767197429583367
+      silksong_reaper_166: -766385733163051358
+      silksong_reaper_167: -7452230815086657904
+      silksong_reaper_168: -3507091668392238096
+      silksong_reaper_169: 3913017887341498632
+      silksong_reaper_17: -8831959875746599692
+      silksong_reaper_170: 4161789685470955941
+      silksong_reaper_171: -149468239862260583
+      silksong_reaper_172: -6091806866188558983
+      silksong_reaper_173: -1990095408317775902
+      silksong_reaper_174: -5385511780101054389
+      silksong_reaper_175: -7576920033172321567
+      silksong_reaper_176: -2452668395501893924
+      silksong_reaper_177: 8613431797808688097
+      silksong_reaper_178: -1575990920592911445
+      silksong_reaper_179: 8474693167139085522
+      silksong_reaper_18: 7988362438025927230
+      silksong_reaper_180: 5052272583786892409
+      silksong_reaper_181: 7512411192470746693
+      silksong_reaper_182: 1074693000
+      silksong_reaper_19: -6125916594988324916
+      silksong_reaper_2: 691106758639815742
+      silksong_reaper_20: 8216395512040131131
+      silksong_reaper_21: -8133737566654181801
+      silksong_reaper_22: -4438238601496084733
+      silksong_reaper_23: 426029948546256186
+      silksong_reaper_24: 3497720608970550010
+      silksong_reaper_25: -7288155313937038793
+      silksong_reaper_26: -2263135686158228253
+      silksong_reaper_27: -854945266345058135
+      silksong_reaper_28: 4541250740119498634
+      silksong_reaper_29: -2678481368144975835
+      silksong_reaper_3: 6697417650902511715
+      silksong_reaper_30: 3303728520019050725
+      silksong_reaper_31: -5525223830511553996
+      silksong_reaper_32: -3975795916795342160
+      silksong_reaper_33: 4047475705918215628
+      silksong_reaper_34: 4831488547604511360
+      silksong_reaper_35: -4072882499693597986
+      silksong_reaper_36: -116689296112271729
+      silksong_reaper_37: -6159866130172353410
+      silksong_reaper_38: -7699146941855351255
+      silksong_reaper_39: -5678705666442196330
+      silksong_reaper_4: 2991538253826375078
+      silksong_reaper_40: -2556239635656508286
+      silksong_reaper_41: 3260243873584111942
+      silksong_reaper_42: 5829822261055071548
+      silksong_reaper_43: 7359974817313253973
+      silksong_reaper_44: 7093668582034213801
+      silksong_reaper_45: 3245856625019747147
+      silksong_reaper_46: 2442814973292204005
+      silksong_reaper_47: -7920359922950130411
+      silksong_reaper_48: -1021432830177358136
+      silksong_reaper_49: -5402596892206589470
+      silksong_reaper_5: -2139366265451484621
+      silksong_reaper_50: 5227279731527699765
+      silksong_reaper_51: 5348776808176437495
+      silksong_reaper_52: 2752762161755529877
+      silksong_reaper_53: 7784174521691573100
+      silksong_reaper_54: -6663587272901902050
+      silksong_reaper_55: -2159167008332589202
+      silksong_reaper_56: 7924518335000300576
+      silksong_reaper_57: 5542331013270294185
+      silksong_reaper_58: -1940306018312217500
+      silksong_reaper_59: -4114233288454679299
+      silksong_reaper_6: 1153336567030579865
+      silksong_reaper_60: -1873572960124132373
+      silksong_reaper_61: -6147840376981704496
+      silksong_reaper_62: 2836844699494450071
+      silksong_reaper_63: 3306240855810001076
+      silksong_reaper_64: 6958151889598344832
+      silksong_reaper_65: -605473648538865539
+      silksong_reaper_66: -6747646769497082882
+      silksong_reaper_67: -1106389512906531646
+      silksong_reaper_68: -8643863960265023498
+      silksong_reaper_69: -888587146615191096
+      silksong_reaper_7: 1053980281618779510
+      silksong_reaper_70: 2709777247715592983
+      silksong_reaper_71: 4863745659674942629
+      silksong_reaper_72: 58829725900539424
+      silksong_reaper_73: -3814128165899114934
+      silksong_reaper_74: 3437127386500415578
+      silksong_reaper_75: -6472878563716135945
+      silksong_reaper_76: 9027832033315089430
+      silksong_reaper_77: 8776713674374837734
+      silksong_reaper_78: -7822121528594891015
+      silksong_reaper_79: 3750993483835128586
+      silksong_reaper_8: 9201460187495179383
+      silksong_reaper_80: 7441691001496334204
+      silksong_reaper_81: 9054165731541989828
+      silksong_reaper_82: 5364231524655586814
+      silksong_reaper_83: 6995007682248533383
+      silksong_reaper_84: 1293993659753366523
+      silksong_reaper_85: -4615474119705211524
+      silksong_reaper_86: -3898155972959558498
+      silksong_reaper_87: 2145976442323467616
+      silksong_reaper_88: 2330605607314006933
+      silksong_reaper_89: -981176307504654904
+      silksong_reaper_9: 3885311507148188693
+      silksong_reaper_90: -5642375830256480218
+      silksong_reaper_91: 862205119869681818
+      silksong_reaper_92: -7198711976673485286
+      silksong_reaper_93: 2555714306855865122
+      silksong_reaper_94: -4562446831308101577
+      silksong_reaper_95: -1041107433569869190
+      silksong_reaper_96: -2540610464625656097
+      silksong_reaper_97: 30300991761868479
+      silksong_reaper_98: 5745698667858283744
+      silksong_reaper_99: -436267726868287757
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
