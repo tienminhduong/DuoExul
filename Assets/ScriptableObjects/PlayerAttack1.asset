@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CommandData
   label: Attack1
   commands:
+  - rid: 8106860985797575087
   - rid: 8106860985797575045
   - rid: 8106860985797575084
-  - rid: 8106860985797575087
   references:
     version: 2
     RefIds:
