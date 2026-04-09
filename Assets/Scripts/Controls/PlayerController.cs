@@ -1,27 +1,29 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(HealthComponent))]
 public class PlayerController : MonoBehaviour, IEntity
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
     public int Direction { get; private set; }
     public AnimationController AnimationController { get; private set; }
+    public HealthComponent HealthComponent { get; private set; }
 
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpHeight = 6f;
     [SerializeField] private int maxJumps = 1;
+    [SerializeField] private int baseAttack = 10;
+    public int BaseAttack => baseAttack;
 
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Reference")]
     [SerializeField] private GameObject hitbox;
-    [SerializeField] private ChainCommandInvoker attackCommandInvoker;
+    [SerializeField] private AttackCommandInvoker attackCommandInvoker;
 
 
     [Header("Debug readonly")]
@@ -40,7 +42,8 @@ public class PlayerController : MonoBehaviour, IEntity
         Rigidbody = GetComponent<Rigidbody2D>();
         Collider = GetComponent<BoxCollider2D>();
         AnimationController = new AnimationController(GetComponentInChildren<Animator>());
-
+        HealthComponent = GetComponent<HealthComponent>();
+        
         SetupStateMachine();
     }
 

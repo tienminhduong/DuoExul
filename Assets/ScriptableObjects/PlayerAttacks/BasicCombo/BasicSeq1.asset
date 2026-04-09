@@ -10,11 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 041d1163f1a60d4d5b5a4be1a8211e5c, type: 3}
-  m_Name: PlayerAttack1Data
+  m_Name: BasicSeq1
   m_EditorClassIdentifier: Assembly-CSharp::AttackData
   label: Move1
   animationData:
     priority: 1
     stateName: Attack1
     animationClip: {fileID: 7400000, guid: 93a84ec2651b07ccc9dbfeaadebd5df3, type: 2}
-  baseDamage: 10
+  uniqueAbilities:
+  - rid: 8106861069686800472
+  - rid: 8106861069686800473
+  references:
+    version: 2
+    RefIds:
+    - rid: 8106861069686800472
+      type: {class: DamageAbility, ns: , asm: Assembly-CSharp}
+      data:
+        attackMultiplier: 1.2
+    - rid: 8106861069686800473
+      type: {class: RecoilForceAbility, ns: , asm: Assembly-CSharp}
+      data:
+        recoilForce: 2
