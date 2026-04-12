@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1409236499164817257
+--- !u!1 &5729714796597942965
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2945200012306616184}
-  - component: {fileID: 7603180134890557178}
-  - component: {fileID: 5505404087871058402}
-  - component: {fileID: 3727755306691922094}
+  - component: {fileID: 2440198943980419113}
+  - component: {fileID: 3034766197216133251}
+  - component: {fileID: 4780703943967882682}
+  - component: {fileID: 8552363481319121298}
   m_Layer: 0
-  m_Name: CutGrassVFX
+  m_Name: RockBreakVfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2945200012306616184
+--- !u!4 &2440198943980419113
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409236499164817257}
+  m_GameObject: {fileID: 5729714796597942965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07791501, y: -0.93475926, z: 0.024179049}
+  m_LocalPosition: {x: -2.36, y: 0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &7603180134890557178
+--- !u!198 &3034766197216133251
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409236499164817257}
+  m_GameObject: {fileID: 5729714796597942965}
   serializedVersion: 8
-  lengthInSec: 1.5
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 3
   cullingMode: 0
@@ -117,7 +117,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.5
+      scalar: 2
       minScalar: 0.5
       maxCurve:
         serializedVersion: 2
@@ -752,7 +752,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.2
+      value: 0.4
       mode: 0
       spread: 0
       speed:
@@ -1368,7 +1368,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 0.8}
+        key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0.29803923}
         key3: {r: 0, g: 0, b: 0, a: 0.003921569}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1546,11 +1546,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -3075321283680775495, guid: e424f075893f4014b8366b73a9c8c99c, type: 3}
-    - sprite: {fileID: 7421867485779905927, guid: e424f075893f4014b8366b73a9c8c99c, type: 3}
-    - sprite: {fileID: 5891598528820585769, guid: e424f075893f4014b8366b73a9c8c99c, type: 3}
-    - sprite: {fileID: -6800149282209211914, guid: e424f075893f4014b8366b73a9c8c99c, type: 3}
-    - sprite: {fileID: -9086752253592823719, guid: e424f075893f4014b8366b73a9c8c99c, type: 3}
+    - sprite: {fileID: 6089649267251162172, guid: 22250bb87be6305499215b22432dc196, type: 3}
+    - sprite: {fileID: -1997751666377833823, guid: 22250bb87be6305499215b22432dc196, type: 3}
+    - sprite: {fileID: 3931634848046877781, guid: 22250bb87be6305499215b22432dc196, type: 3}
+    - sprite: {fileID: 8285518346407287992, guid: 22250bb87be6305499215b22432dc196, type: 3}
+    - sprite: {fileID: 3165098407571686068, guid: 22250bb87be6305499215b22432dc196, type: 3}
+    - sprite: {fileID: 2448616801154512464, guid: 22250bb87be6305499215b22432dc196, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4828,14 +4829,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &5505404087871058402
+--- !u!199 &4780703943967882682
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409236499164817257}
+  m_GameObject: {fileID: 5729714796597942965}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -4908,16 +4909,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &3727755306691922094
+--- !u!114 &8552363481319121298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409236499164817257}
+  m_GameObject: {fileID: 5729714796597942965}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e949457ea422c9146b09330a4ff59c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParticleEffect
-  type: 1
+  type: 2

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2494ea1549efc40bc6d33da82917fc, type: 3}
+  m_Name: RockBreakVfx
+  m_EditorClassIdentifier: Assembly-CSharp::VfxConfig
+  type: 2
+  prefab: {fileID: 8552363481319121298, guid: 2444bf02b0b086d479ee6578c2e87b97, type: 3}
+  preloadCount: 5

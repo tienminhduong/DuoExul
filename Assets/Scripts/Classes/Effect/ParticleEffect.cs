@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(ParticleSystem))]
 public class ParticleEffect : MonoBehaviour, IVfxEffect
 {
     [SerializeField] private VfxType type;
