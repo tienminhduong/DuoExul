@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackHitbox
   hittableLayers:
-  - serializedVersion: 2
+    serializedVersion: 2
     m_Bits: 4294967295
 --- !u!1 &1211719695
 GameObject:
@@ -1329,6 +1329,9 @@ MonoBehaviour:
     m_Bits: 8
   hitbox: {fileID: 1156854308}
   attackCommandInvoker: {fileID: 1946293518}
+  attackCommands:
+  - {fileID: 11400000, guid: aa7a3cbe6677f5c5784a228f9365fa6b, type: 2}
+  - {fileID: 11400000, guid: faded7c1848e7972c9e30bb8a2da12db, type: 2}
   stateMachine:
     currentState:
       rid: -2
@@ -1423,7 +1426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56adfb7cb3067dd3e88d4094da18e6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChainCommandInvoker
-  comboAttackData: {fileID: 11400000, guid: aa7a3cbe6677f5c5784a228f9365fa6b, type: 2}
+  comboAttackData: {fileID: 11400000, guid: faded7c1848e7972c9e30bb8a2da12db, type: 2}
   PauseMaxDurationInSeconds: 0.2
   attackHitbox: {fileID: 1156854312}
   isExecuting: 0

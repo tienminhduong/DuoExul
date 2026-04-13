@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BasicComboData
   m_EditorClassIdentifier: Assembly-CSharp::CommandData
   label: Attack1
+  isLooping: 1
   commands:
   - rid: 8106860985797575045
   - rid: 8106860985797575084

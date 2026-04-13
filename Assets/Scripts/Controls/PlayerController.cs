@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -25,12 +26,17 @@ public class PlayerController : MonoBehaviour, IEntity
     [SerializeField] private GameObject hitbox;
     [SerializeField] private AttackCommandInvoker attackCommandInvoker;
 
+    [Header("Attack Commands")]
+    [SerializeField] private List<CommandData> attackCommands = new List<CommandData>();
+
 
     [Header("Debug readonly")]
     [ReadOnly][SerializeField] private StateMachine stateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
     [ReadOnly][SerializeField] private int viableJumps = 1;
+
+    public Vector2 CurrentDirectionInput;
 
 
     // Actions
@@ -43,7 +49,7 @@ public class PlayerController : MonoBehaviour, IEntity
         Collider = GetComponent<BoxCollider2D>();
         AnimationController = new AnimationController(GetComponentInChildren<Animator>());
         HealthComponent = GetComponent<HealthComponent>();
-        
+
         SetupStateMachine();
     }
 
@@ -125,7 +131,13 @@ public class PlayerController : MonoBehaviour, IEntity
 
     public void HandleAttackInput()
     {
-        var attackCommand = attackCommandInvoker.ExecuteCommandsAsync();
+        CommandData selectedAttackCommand = attackCommands[0];
+        if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1)
+            selectedAttackCommand = attackCommands[1];
+        if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
+        {
+            var _ = attackCommandInvoker.ExecuteCommandsAsync();
+        }
     }
 
     public void HandleAttackInputCancel()

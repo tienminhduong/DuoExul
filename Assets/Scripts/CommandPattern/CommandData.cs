@@ -5,6 +5,7 @@ using UnityEngine;
 public class CommandData : ScriptableObject
 {
     public string label;
+    public bool isLooping = false;
     [SerializeReference] public List<ICommand> commands;
 
     void OnEnable()

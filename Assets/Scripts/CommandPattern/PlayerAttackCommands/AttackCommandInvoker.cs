@@ -13,7 +13,7 @@ public class AttackCommandInvoker : MonoBehaviour
     [ReadOnly][SerializeField] private bool isPaused;
     [ReadOnly][SerializeField] private float pauseTimer;
 
-    private int currentExecutingCommandIndex;
+    [ReadOnly][SerializeField] private int currentExecutingCommandIndex;
 
     void Awake()
     {
@@ -82,17 +82,18 @@ public class AttackCommandInvoker : MonoBehaviour
 
             if (currentExecutingCommandIndex >= comboAttackData.commands.Count)
             {
-                // StopExecution();
-                // break;
-                currentExecutingCommandIndex = 0;
+                if (comboAttackData.isLooping)
+                    currentExecutingCommandIndex = 0;
+                else
+                {
+                    StopExecution();
+                    break;
+                }
             }
 
             var command = comboAttackData.commands[currentExecutingCommandIndex];
             pauseTimer = 0f;
-            // if (command is PlayerAttackCommand playerAttackCommand)
-            // {
-            //     AbilityInvoker.ApplyEffect(playerAttackCommand.attackData.uniqueAbilities, entity, null);
-            // }
+            Debug.Log($"Executing command {currentExecutingCommandIndex} of {comboAttackData.commands.Count}");
             await command.Execute(entity);
             currentExecutingCommandIndex++;
         }
@@ -108,7 +109,25 @@ public class AttackCommandInvoker : MonoBehaviour
 
     private void ApplyAttackEffects(IEntity target)
     {
+        if (currentExecutingCommandIndex < 0 || currentExecutingCommandIndex >= comboAttackData.commands.Count)
+            return;
         if (comboAttackData.commands[currentExecutingCommandIndex] is PlayerAttackCommand attackData)
             AbilityInvoker.ApplyEffect(attackData.attackData.uniqueAbilities, entity, target);
+    }
+
+    public bool SetComboAttackData(CommandData newData)
+    {
+        if (comboAttackData.label == newData.label)
+            return true;
+        if (isExecuting && !isPaused)
+        {
+            Debug.LogWarning("Cannot change combo attack data while executing. Please pause execution first.");
+            return false;
+        }
+
+        StopExecution();
+
+        comboAttackData = newData;
+        return true;
     }
 }
