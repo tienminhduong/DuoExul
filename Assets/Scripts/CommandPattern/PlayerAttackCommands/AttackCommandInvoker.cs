@@ -111,7 +111,7 @@ public class AttackCommandInvoker : MonoBehaviour
     {
         if (currentExecutingCommandIndex < 0 || currentExecutingCommandIndex >= comboAttackData.commands.Count)
             return;
-        if (comboAttackData.commands[currentExecutingCommandIndex] is PlayerAttackCommand attackData)
+        if (comboAttackData.commands[currentExecutingCommandIndex] is AttackCommand attackData)
             AbilityInvoker.ApplyEffect(attackData.attackData.uniqueAbilities, entity, target);
     }
 

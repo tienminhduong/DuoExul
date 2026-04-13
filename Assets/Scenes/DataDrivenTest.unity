@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2859156749689046628, guid: 29ee0d4d07e7d064ebe76b658c45e373, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4176779827284566328, guid: 29ee0d4d07e7d064ebe76b658c45e373, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1336,6 +1336,7 @@ MonoBehaviour:
     currentState:
       rid: -2
   viableJumps: 1
+  CurrentDirectionInput: {x: 0, y: 0}
   references:
     version: 2
     RefIds:
@@ -1432,6 +1433,7 @@ MonoBehaviour:
   isExecuting: 0
   isPaused: 0
   pauseTimer: 0
+  currentExecutingCommandIndex: 0
 --- !u!114 &1946293519
 MonoBehaviour:
   m_ObjectHideFlags: 0

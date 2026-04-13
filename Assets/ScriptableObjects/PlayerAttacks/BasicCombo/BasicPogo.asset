@@ -17,7 +17,12 @@ MonoBehaviour:
     priority: 1
     stateName: Pogo
     animationClip: {fileID: 7400000, guid: 14eeb63d2c202c8c4a289b6874c3ac5d, type: 2}
-  uniqueAbilities: []
+  uniqueAbilities:
+  - rid: 8106861154968535495
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8106861154968535495
+      type: {class: PogoAbility, ns: , asm: Assembly-CSharp}
+      data:
+        bounceForce: 10

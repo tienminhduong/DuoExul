@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: BasicPogoData
   m_EditorClassIdentifier: Assembly-CSharp::CommandData
   label: BasicPogoData
+  isLooping: 0
   commands:
-  - rid: 8106861077211119725
+  - rid: 8106861154968535470
   references:
     version: 2
     RefIds:
-    - rid: 8106861077211119725
-      type: {class: PlayerAttackCommand, ns: , asm: Assembly-CSharp}
+    - rid: 8106861154968535470
+      type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
       data:
         attackData: {fileID: 11400000, guid: 43c1a93b8f217faf98be312a4297a56f, type: 2}

@@ -1,13 +1,22 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
-public class Hazard : MonoBehaviour, IHazard
+public class Hazard : MonoBehaviour, IHazard, IObject
 {
     [SerializeField] private int damage = 10;
     [SerializeField] private bool isActive = true;
     public int Damage => damage;
 
+    [SerializeField] private ObjectType objectType;
+
+
     public bool IsActive => isActive;
+
+    public ObjectType ObjectType => objectType;
+
+    public Rigidbody2D Rigidbody => throw new System.NotImplementedException();
+
+    public int Direction => throw new System.NotImplementedException();
 
     private void Start()
     {

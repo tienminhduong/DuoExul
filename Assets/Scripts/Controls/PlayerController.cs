@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 [RequireComponent(typeof(HealthComponent))]
-public class PlayerController : MonoBehaviour, IEntity
+public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
