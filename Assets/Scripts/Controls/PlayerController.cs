@@ -31,12 +31,15 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
 
     [Header("Debug readonly")]
+    public Vector2 CurrentDirectionInput;
     [ReadOnly][SerializeField] private StateMachine stateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
     [ReadOnly][SerializeField] private int viableJumps = 1;
 
-    public Vector2 CurrentDirectionInput;
+    
+    private bool isGrounded;
+    private GroundDetector groundDetector;
 
 
     // Actions
@@ -50,7 +53,21 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         AnimationController = new AnimationController(GetComponentInChildren<Animator>());
         HealthComponent = GetComponent<HealthComponent>();
 
+        groundDetector = GetComponentInChildren<GroundDetector>();
+
         SetupStateMachine();
+    }
+
+    void OnEnable()
+    {
+        groundDetector.OnGrounded += OnGroundedCollided;
+        groundDetector.OnLeftGround += OnLeftGround;
+    }
+
+    void OnDisable()
+    {
+        groundDetector.OnGrounded -= OnGroundedCollided;
+        groundDetector.OnLeftGround -= OnLeftGround;
     }
 
     private void SetupStateMachine()
@@ -116,12 +133,24 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         stateMachine.Update();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     ResetOnTouch();
+
+    //     // if (groundLayer.Contains(collision.gameObject))
+    //     OnGrounded?.Invoke();
+    // }
+
+    private void OnGroundedCollided()
     {
         ResetOnTouch();
+        isGrounded = true;
+        OnGrounded?.Invoke();
+    }
 
-        if (groundLayer.Contains(collision.gameObject))
-            OnGrounded?.Invoke();
+    private void OnLeftGround()
+    {
+        isGrounded = false;
     }
 
     public void Attack(AttackData attackData)
@@ -132,7 +161,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public void HandleAttackInput()
     {
         CommandData selectedAttackCommand = attackCommands[0];
-        if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1)
+        if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1 && !isGrounded)
             selectedAttackCommand = attackCommands[1];
         if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
         {
