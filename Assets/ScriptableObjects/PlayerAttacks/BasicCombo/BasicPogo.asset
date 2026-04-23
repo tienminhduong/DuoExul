@@ -19,10 +19,15 @@ MonoBehaviour:
     animationClip: {fileID: 7400000, guid: 14eeb63d2c202c8c4a289b6874c3ac5d, type: 2}
   uniqueAbilities:
   - rid: 8106861154968535495
+  - rid: 8106861178096451747
   references:
     version: 2
     RefIds:
     - rid: 8106861154968535495
       type: {class: PogoAbility, ns: , asm: Assembly-CSharp}
       data:
-        bounceForce: 10
+        bounceForce: 18
+    - rid: 8106861178096451747
+      type: {class: DamageAbility, ns: , asm: Assembly-CSharp}
+      data:
+        attackMultiplier: 1

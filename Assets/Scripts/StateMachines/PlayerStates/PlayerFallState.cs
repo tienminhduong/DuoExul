@@ -1,6 +1,3 @@
-using TriInspector;
-using UnityEngine;
-
 public class PlayerFallState : BasePlayerState
 {
     public PlayerFallState(PlayerController player) : base(player)

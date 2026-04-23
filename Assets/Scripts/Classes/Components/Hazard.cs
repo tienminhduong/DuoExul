@@ -16,8 +16,6 @@ public class Hazard : MonoBehaviour, IHazard, IObject
 
     public Rigidbody2D Rigidbody => throw new System.NotImplementedException();
 
-    public int Direction => throw new System.NotImplementedException();
-
     private void Start()
     {
         var collider = GetComponent<Collider2D>();

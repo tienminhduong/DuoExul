@@ -8,7 +8,7 @@ public class AttackHitbox : MonoBehaviour
     public LayerMask hittableLayers;
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (((1 << collision.gameObject.layer) & hittableLayers) != 0)
+        if (hittableLayers.Contains(collision.gameObject))
         {
             if (collision.TryGetComponent<IEntity>(out var hitEntity))
             {

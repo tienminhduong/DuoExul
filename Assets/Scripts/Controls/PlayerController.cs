@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public int Direction { get; private set; }
+    public int Direction;
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
 
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     // For double jumping, reset if touch the ground, -1 when leave the ground
     [ReadOnly][SerializeField] private int viableJumps = 1;
 
-    
+
     private bool isGrounded;
     private GroundDetector groundDetector;
 
@@ -62,12 +62,16 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     {
         groundDetector.OnGrounded += OnGroundedCollided;
         groundDetector.OnLeftGround += OnLeftGround;
+
+        EventBus<ChangeHealthPlayerEvent>.Register(OnChangeHealthPlayer);
     }
 
     void OnDisable()
     {
         groundDetector.OnGrounded -= OnGroundedCollided;
         groundDetector.OnLeftGround -= OnLeftGround;
+
+        EventBus<ChangeHealthPlayerEvent>.Unregister(OnChangeHealthPlayer);
     }
 
     private void SetupStateMachine()
@@ -94,7 +98,8 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
     public void SetDirection(Vector2 vector2)
     {
-        Direction = vector2.x != 0 ? (int)Mathf.Sign(vector2.x) : 0;
+        // Debug.Log($"Input data: {vector2}");
+        Direction = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
         transform.localScale = new Vector3(Direction != 0 ? -Direction : transform.localScale.x, transform.localScale.y, transform.localScale.z);
         if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
@@ -133,14 +138,6 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         stateMachine.Update();
     }
 
-    // void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     ResetOnTouch();
-
-    //     // if (groundLayer.Contains(collision.gameObject))
-    //     OnGrounded?.Invoke();
-    // }
-
     private void OnGroundedCollided()
     {
         ResetOnTouch();
@@ -172,5 +169,18 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public void HandleAttackInputCancel()
     {
         attackCommandInvoker.PauseExecution();
+    }
+
+    private void OnChangeHealthPlayer(ChangeHealthPlayerEvent evt)
+    {
+        Debug.Log($"Player health change event received: {evt.HealthChange}");
+        if (evt.HealthChange < 0)
+        {
+            HealthComponent.TakeDamage((int)-evt.HealthChange);
+        }
+        else
+        {
+            HealthComponent.Heal((int)evt.HealthChange);
+        }
     }
 }

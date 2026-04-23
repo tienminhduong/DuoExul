@@ -15,8 +15,8 @@ MonoBehaviour:
   label: Attack1
   isLooping: 1
   commands:
-  - rid: 8106861154968535467
   - rid: 8106861154968535468
+  - rid: 8106861154968535467
   - rid: 8106861154968535469
   references:
     version: 2

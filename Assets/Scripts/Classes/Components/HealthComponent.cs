@@ -5,9 +5,14 @@ using UnityEngine.Events;
 public class HealthComponent : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
-    [ReadOnly] [SerializeField] private int currentHealth;
+    [ReadOnly][SerializeField] private int currentHealth;
 
     public UnityAction OnDeath;
+
+    void Start()
+    {
+        ResetHealth();
+    }
 
     public void TakeDamage(int damage)
     {
