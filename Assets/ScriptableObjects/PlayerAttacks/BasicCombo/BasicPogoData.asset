@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94cd0d7bc832071cb7b119c3792b193, type: 3}
+  m_Name: BasicPogoData
+  m_EditorClassIdentifier: Assembly-CSharp::CommandData
+  label: BasicPogoData
+  isLooping: 0
+  commands:
+  - rid: 8106861154968535470
+  references:
+    version: 2
+    RefIds:
+    - rid: 8106861154968535470
+      type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 43c1a93b8f217faf98be312a4297a56f, type: 2}

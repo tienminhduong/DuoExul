@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class PlayerInputControls : MonoBehaviour
@@ -13,8 +14,18 @@ public class PlayerInputControls : MonoBehaviour
     void OnEnable()
     {
         controls.Enable();
-        controls.Player.Move.performed += ctx => player.SetDirection(ctx.ReadValue<Vector2>());
-        controls.Player.Move.canceled += ctx => player.SetDirection(Vector2.zero);
+        controls.Player.Move.performed += ctx =>
+        {
+            player.SetDirection(ctx.ReadValue<Vector2>());
+            player.CurrentDirectionInput = ctx.ReadValue<Vector2>();
+        };
+
+        controls.Player.Move.canceled += ctx =>
+        {
+            player.SetDirection(Vector2.zero);
+            player.CurrentDirectionInput = Vector2.zero;
+        };
+
         controls.Player.Jump.performed += ctx => player.SetJump();
         controls.Player.Jump.canceled += ctx => player.SetFall();
         controls.Player.Attack.performed += ctx => player.HandleAttackInput();
