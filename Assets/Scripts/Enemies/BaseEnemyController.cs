@@ -1,19 +1,23 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(HealthComponent))]
+[RequireComponent(typeof(Collider2D))]
 public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageable
 {
     // This variable is used to prevent the enemy from flipping too frequently,
     // which can cause visual glitches and unnatural behavior
     private float lastTimeFlip = -1;
     protected bool isDead = false;
+    protected bool isHurt = false;
     [SerializeField] private float minTimeBetweenFlips = 1f; // Minimum time in seconds between flips
 
     // Components
     protected Rigidbody2D _rigidbody;
     protected HealthComponent _healthComponent;
+    protected Collider2D _collider;
 
     // Helper classes
     protected AnimationController _animationController;
@@ -23,7 +27,7 @@ public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageabl
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _healthComponent = GetComponent<HealthComponent>();
-        _animationController = new AnimationController(GetComponentInChildren<Animator>());
+        _collider = GetComponent<Collider2D>();
     }
 
     public int BaseAttack => 0; // this property may not use, but we need it to implement IAttacker
@@ -40,7 +44,7 @@ public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageabl
     // for example, some enemies can see the player from far away,
     // some can only see when the player is close,
     // some can see through walls, some can't see through walls, etc.
-    virtual public bool CanSeePlayer() { return false; }
+    virtual public bool CanSeePlayer(LayerMask sightBlockerMasks) { return false; }
     virtual public GameObject GetPlayer() { return null; }
 
     public void Move(Vector2 direction, float speed=5)
@@ -100,4 +104,19 @@ public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageabl
     {
         return isDead;
     }
+
+    public bool IsHurt()
+    {
+        return isHurt;
+    }
+
+    public void SetHurt(bool value)
+    {
+        isHurt = value;
+    }
+
+    public virtual void SetDie()
+    {
+        isDead = true;
+    }    
 }

@@ -14,4 +14,5 @@ public abstract class BasePlayerState : IState
     public virtual void Exit() { }
     public virtual void Update() { }
     public virtual void FixedUpdate() { }
+    public virtual bool IsFinished() => false;
 }

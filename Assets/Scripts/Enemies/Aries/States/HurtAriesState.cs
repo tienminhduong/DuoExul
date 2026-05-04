@@ -1,31 +1,31 @@
 using System;
 using UnityEngine;
 
-public class HurtAriesState : BaseAriesState
+public class HurtAriesState : BaseEnemyState
 {
-    readonly AnimationData hurtAnimationData = new AnimationData(AnimationData.PriorityLevel.Standard, "AriesHurt");
-    public HurtAriesState(AnimationController animationController, BaseEnemyController enemyController) : base(animationController, enemyController)
+    public HurtAriesState(BaseEnemyController enemyController, Animator animator, string animationName) 
+        : base(enemyController, animator, animationName)
     {
     }
 
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("Entering Hurt State");
-        // Play hurt animation
-        var _ = animationController.PlayAnimation(hurtAnimationData);
-        animationController.OnStandardAnimationComplete += OnHurtAnimationComplete;
-    }
-
-    private void OnHurtAnimationComplete()
-    {
-        enemyController.ChangeState<IdleAriesState>();
+        Debug.Log("Hurt");
+        animator.CrossFade(animationName, crossFadeDuration);
     }
 
     public override void Exit()
     {
         base.Exit();
-        Debug.Log("Exiting Hurt State");
-        animationController.OnStandardAnimationComplete -= OnHurtAnimationComplete;
+        enemyController.SetHurt(false);
+    }
+
+    public override bool IsFinished()
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        return (stateInfo.IsName(animationName) && 
+                stateInfo.normalizedTime >= 1.0f && !animator.IsInTransition(0));
     }
 }

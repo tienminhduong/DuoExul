@@ -278,96 +278,11 @@ Transform:
   m_GameObject: {fileID: 93484596}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.51, y: -4.48, z: 0}
-  m_LocalScale: {x: 24.640936, y: 1, z: 1}
+  m_LocalPosition: {x: 0.2111, y: -4.12, z: 0}
+  m_LocalScale: {x: 56.08277, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &109364467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 109364470}
-  - component: {fileID: 109364469}
-  - component: {fileID: 109364468}
-  m_Layer: 0
-  m_Name: DetectPlayer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &109364468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109364467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7569d15bae0eee4c91447bef363ba43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CircleDetection
-  radius: 5
-  detectLayerMask:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!58 &109364469
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109364467}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 5
---- !u!4 &109364470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109364467}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 222298833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &132858214 stripped
 Transform:
@@ -389,7 +304,7 @@ GameObject:
   - component: {fileID: 222298829}
   - component: {fileID: 222298834}
   - component: {fileID: 222298835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,10 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AriesController
   minTimeBetweenFlips: 2
-  playerDetector: {fileID: 109364468}
-  hurtLayers:
-  - serializedVersion: 2
-    m_Bits: 128
+  playerDetector: {fileID: 241397438}
 --- !u!114 &222298830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,7 +437,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 109364470}
+  - {fileID: 241397439}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &222298834
@@ -596,6 +508,58 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &241397437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241397439}
+  - component: {fileID: 241397438}
+  m_Layer: 0
+  m_Name: PlayerDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &241397438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241397437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38cd20d190c55a04bba64b045e9f91fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDetector
+  detectionCooldown: 1
+  sightBlockerMasks:
+    serializedVersion: 2
+    m_Bits: 73
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  detectionRange: 7
+--- !u!4 &241397439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241397437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 222298833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &388891022
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +574,7 @@ GameObject:
   - component: {fileID: 388891025}
   - component: {fileID: 388891024}
   - component: {fileID: 388891023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 388891022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.09, y: -1.57178, z: 0}
+  m_LocalPosition: {x: -18.66, y: -2.07, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1837,7 +1801,7 @@ Transform:
   m_GameObject: {fileID: 1946293510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.59, y: -2.15, z: 0}
+  m_LocalPosition: {x: -24.27, y: -2.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

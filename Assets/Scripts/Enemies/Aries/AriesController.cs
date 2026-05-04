@@ -1,75 +1,68 @@
+﻿using AIEnemy;
+using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 [RequireComponent(typeof(BoxCollider2D), typeof(Rigidbody2D), typeof(HealthComponent))]
-public class AriesController : BaseEnemyController
+public class AriesController : BaseEnemyController, IEntity
 {
-    [SerializeField] private BaseDetectionTarget playerDetector;
-    [SerializeField] private List<LayerMask> hurtLayers;
+    [SerializeField] PlayerDetector playerDetector;
 
-    private BoxCollider2D _boxCollider;
+    Animator animator;
+    AIStateMachine stateMachine;
+
     protected override void Awake()
     {
         base.Awake();
-        _boxCollider = GetComponent<BoxCollider2D>();
-        _healthComponent.OnDeath += Die;
-        SetupStateMachine();
+        animator = GetComponent<Animator>();
+    }
+    private void Start()
+    {
+        stateMachine = new AIStateMachine();
+
+        var idleState = new IdleAriesState(this, animator, "AriesIdle");
+        var moveState = new MoveAriesState(this, animator, "AriesRun", playerDetector.Player);
+        var hurtState = new HurtAriesState(this, animator, "AriesHurt");
+        var dieState = new DieAriesState(this, animator, "AriesDie");
+
+        At(idleState, moveState, new FuncPredicate(() => playerDetector.CanDetectPlayer()));
+        At(idleState, hurtState, new FuncPredicate(() => IsHurt()));
+        At(moveState, idleState, new FuncPredicate(() => !playerDetector.CanDetectPlayer()));
+        At(moveState, hurtState, new FuncPredicate(() => IsHurt()));
+        At(hurtState, idleState, new FuncPredicate(() => hurtState.IsFinished()));
+        At(hurtState, dieState, new FuncPredicate(() => HealthComponent.CurrentHealth <= 0));
+
+        stateMachine.SetState(idleState);
     }
 
-    private void SetupStateMachine()
-    {
-        _stateMachine = new StateMachine();
-        _stateMachine.AddState(new IdleAriesState(_animationController, this));
-        _stateMachine.AddState(new MoveAriesState(_animationController, this));
-        _stateMachine.AddState(new HurtAriesState(_animationController, this));
-        _stateMachine.AddState(new DieAriesState(_animationController, this));
-        _stateMachine.ChangeState<IdleAriesState>();
-    }
+    void At(IState from, IState to, IPredicate condition) => stateMachine.AddTransition(from, to, condition);
+    void Any(IState to, IPredicate condition) => stateMachine.AddAnyTransition(to, condition);
 
     private void Update()
     {
-        _stateMachine?.Update();
+        stateMachine.Update();
     }
 
     private void FixedUpdate()
     {
-        _stateMachine?.FixedUpdate();
-    }
-    public override bool CanSeePlayer()
-    {
-        return playerDetector.IsDetected();
-    }
-
-    public override GameObject GetPlayer()
-    {
-        return playerDetector.ObjectDetected;
+        stateMachine.FixedUpdate();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(isDead)
-            return;
-
-        if (!_boxCollider.IsTouching(collision))
-            return;
-
-        foreach (var layer in hurtLayers)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))
         {
-            if (((1 << collision.gameObject.layer) & layer) != 0)
-            {
-                _stateMachine?.ChangeState<HurtAriesState>();
-            }
+            Debug.Log("Aries hit by player attack");
+            SetHurt(true);
         }
     }
 
-    protected override void Die()
+    public override void SetDie()
     {
-        if (isDead)
-            return;
-        isDead = true;
-        _boxCollider.enabled = false;
+        base.SetDie();
+        _collider.enabled = false;
         _rigidbody.gravityScale = 0;
-        playerDetector.SetActive(false);
-        ChangeState<DieAriesState>();
     }
 }
