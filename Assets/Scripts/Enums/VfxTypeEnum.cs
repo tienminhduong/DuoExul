@@ -4,5 +4,6 @@ public enum VfxType
 {
     None,
     CutGrass,
-    RockBreak
+    RockBreak,
+    AriesFire,
 }

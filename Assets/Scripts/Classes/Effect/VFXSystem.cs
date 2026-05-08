@@ -33,16 +33,6 @@ public class VFXSystem : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Playing CutGrass VFX");
-            Play(VfxType.CutGrass, this.transform.position, Quaternion.identity);
-            Debug.Log("CutGrass VFX played");
-        }
-    }
-
     public void Play(VfxType type, Vector2 pos, Quaternion rot)
     {
         if (!pools.TryGetValue(type, out var pool))

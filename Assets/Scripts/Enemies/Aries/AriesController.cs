@@ -10,6 +10,12 @@ public class AriesController : BaseEnemyController, IEntity
 {
     [SerializeField] PlayerDetector playerDetector;
 
+    [Header("Skill2")]
+    [SerializeField] int numberOfFireColumnsInPunchGroundSkill = 3;
+    [SerializeField] float distanceOfTwoColumns = 5;
+    [SerializeField] Vector2 offsetFirstColumnFromAriesCenter = new Vector2(1, 0);
+    [SerializeField] Vector2 offsetAxisY = new Vector2(0, 1);
+
     Animator animator;
     AIStateMachine stateMachine;
 
@@ -26,6 +32,7 @@ public class AriesController : BaseEnemyController, IEntity
         var moveState = new MoveAriesState(this, animator, "AriesRun", playerDetector.Player);
         var hurtState = new HurtAriesState(this, animator, "AriesHurt");
         var dieState = new DieAriesState(this, animator, "AriesDie");
+        var punchGroundSkillState = new PunchGroudSkillState(this, animator, "AriesPunchGround");
 
         At(idleState, moveState, new FuncPredicate(() => playerDetector.CanDetectPlayer()));
         At(idleState, hurtState, new FuncPredicate(() => IsHurt()));
@@ -33,6 +40,9 @@ public class AriesController : BaseEnemyController, IEntity
         At(moveState, hurtState, new FuncPredicate(() => IsHurt()));
         At(hurtState, idleState, new FuncPredicate(() => hurtState.IsFinished()));
         At(hurtState, dieState, new FuncPredicate(() => HealthComponent.CurrentHealth <= 0));
+        At(moveState, punchGroundSkillState, new FuncPredicate(() => playerDetector.CanDetectPlayer() && Random.value < 0.01f)); // 1% chance mỗi frame khi phát hiện player
+        At(punchGroundSkillState, idleState, new FuncPredicate(() => punchGroundSkillState.IsFinished()));
+        At(punchGroundSkillState, hurtState, new FuncPredicate(() => IsHurt()));
 
         stateMachine.SetState(idleState);
     }
@@ -65,4 +75,16 @@ public class AriesController : BaseEnemyController, IEntity
         _collider.enabled = false;
         _rigidbody.gravityScale = 0;
     }
+
+    public IEnumerator MakeFireClolumn()
+    {
+        Vector2 effectPosition = (Vector2)transform.position + offsetFirstColumnFromAriesCenter + offsetAxisY; // Khởi tạo vị trí ban đầu là vị trí của Aries
+        Vector2 direction = transform.localScale.x > 0 ? Vector2.right : Vector2.left; // Xác định hướng dựa trên hướng của Aries
+        for(int i = 0; i < numberOfFireColumnsInPunchGroundSkill; i++)
+        {
+            effectPosition += (direction * distanceOfTwoColumns); // Di chuyển vị trí cho cột lửa tiếp theo
+            VFXSystem.Instance?.Play(VfxType.AriesFire, effectPosition, Quaternion.identity);
+            yield return new WaitForSeconds(0.2f); // Đợi một khoảng thời gian trước khi tạo cột lửa tiếp theo
+        }
+    }    
 }
