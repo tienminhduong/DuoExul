@@ -50,11 +50,11 @@ public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageabl
     public void Move(Vector2 direction, float speed=5)
     {
         // 1. Process the direction to determine the facing direction of the enemy
-        if(Time.time - lastTimeFlip < minTimeBetweenFlips)
+        if (Time.time - lastTimeFlip < minTimeBetweenFlips)
         {
             // If the time since the last flip is less than the minimum time between flips, do not flip
         }
-        else if(direction.x != transform.localScale.x)
+        else if(direction.x * transform.localScale.x < 0) // If the direction is opposite to the current facing direction, flip the enemy
         {
             Flip();
         }    
