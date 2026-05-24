@@ -1,4 +1,5 @@
 using System;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,16 +13,16 @@ public class AnimationController
 
     public UnityAction OnOverrideAnimationComplete;
 
-    private async Awaitable CrossFade(AnimationData animationData, float transitionDuration = 0.1f)
+    private async UniTask CrossFade(AnimationData animationData, float transitionDuration = 0.1f)
     {
         // Debug.Log($"Crossfading to state with hash: {animationData.Hash}");
         animator.CrossFade(animationData.Hash, transitionDuration);
-        await Awaitable.WaitForSecondsAsync(transitionDuration + animationData.AnimationDuration);
+        await UniTask.WaitForSeconds(transitionDuration + animationData.AnimationDuration);
     }
 
     private AnimationData currentAnim;
     private AnimationData currentStandardAnim;
-    public async Awaitable PlayAnimation(AnimationData anim, float transitionDuration = 0.1f)
+    public async UniTask PlayAnimation(AnimationData anim, float transitionDuration = 0.1f)
     {
         // Debug.Log($"Playing animation: {anim.stateName} with priority {anim.priority}");
         if (anim.priority == AnimationData.PriorityLevel.Override)
@@ -45,7 +46,7 @@ public class AnimationController
         }
     }
 
-    private async Awaitable RevertStandardAnim(float transitionDuration = 0.1f)
+    private async UniTask RevertStandardAnim(float transitionDuration = 0.1f)
     {
         currentAnim = currentStandardAnim;
         // Debug.Log($"Reverting to standard animation: {currentStandardAnim.stateName}");
