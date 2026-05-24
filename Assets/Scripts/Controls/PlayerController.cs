@@ -11,31 +11,28 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public int MoveDirection;
     public int FacingDirection => MoveDirection != 0 ? MoveDirection : (transform.localScale.x > 0 ? -1 : 1);
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
-
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpHeight = 6f;
-    [SerializeField] private int maxJumps = 1;
-    [SerializeField] private int baseAttack = 10;
-    [SerializeField] private float dashSpeed = 20f;
-    [SerializeField] private float dashRange = 5f;
-    public int BaseAttack => baseAttack;
+    public PlayerStat playerStat = new();
+    public int BaseAttack => playerStat.baseAttack;
 
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Reference")]
     [SerializeField] private GameObject hitbox;
     [SerializeField] private AttackCommandInvoker attackCommandInvoker;
+    [SerializeField] private List<PlayerWeaponData> weapons = new List<PlayerWeaponData>();
+
+    [ReadOnly] public PlayerWeaponData currentWeapon;
 
     [Header("Attack Commands")]
     [SerializeField] private List<CommandData> attackCommands = new List<CommandData>();
 
 
     [Header("Debug readonly")]
-    public Vector2 CurrentDirectionInput;
+    [ReadOnly] public int MoveDirection;
+    [ReadOnly] public Vector2 CurrentDirectionInput;
     [ReadOnly][SerializeField] private StateMachine stateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
@@ -84,16 +81,16 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
         stateMachine.AddState(new PlayerIdleState(this));
         stateMachine.AddState(new PlayerWalkingState(this));
-        stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
+        stateMachine.AddState(new PlayerJumpState(this, playerStat.jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
-        stateMachine.AddState(new PlayerDashState(this, dashSpeed, dashRange));
+        stateMachine.AddState(new PlayerDashState(this, playerStat.dashSpeed, playerStat.dashRange));
 
         stateMachine.SetState<PlayerIdleState>();
     }
 
     private void ResetOnTouch()
     {
-        viableJumps = maxJumps;
+        viableJumps = playerStat.maxJumps;
     }
 
     public void ChangeState<T>() where T : IState
@@ -135,16 +132,16 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     // called in fixed update
     public void UpdateMoving()
     {
-        transform.Translate(MoveDirection * moveSpeed * Time.fixedDeltaTime * Vector2.right);
+        transform.Translate(MoveDirection * playerStat.moveSpeed * Time.fixedDeltaTime * Vector2.right);
     }
 
     public async UniTask PerformDash()
     {
         float distanceTraveled = 0f;
         Vector2 startPosition = transform.position;
-        while (distanceTraveled < dashRange)
+        while (distanceTraveled < playerStat.dashRange)
         {
-            float step = dashSpeed * Time.fixedDeltaTime;
+            float step = playerStat.dashSpeed * Time.fixedDeltaTime;
             transform.Translate(FacingDirection * step * Vector2.right);
             distanceTraveled = Vector2.Distance(startPosition, transform.position);
             await UniTask.Yield(PlayerLoopTiming.FixedUpdate);
@@ -166,6 +163,28 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         ResetOnTouch();
         isGrounded = true;
         OnGrounded?.Invoke();
+    }
+
+
+    public void UnequipCurrentWeapon()
+    {
+        if (currentWeapon != null)
+        {
+            currentWeapon.Unequip(this);
+            currentWeapon = null;
+        }
+    }
+
+
+    public void ChangeWeapon(PlayerWeaponData newWeapon)
+    {
+        Debug.Log($"Changing weapon to: {newWeapon.weaponName}");
+        if (currentWeapon != null)
+            currentWeapon.Unequip(this);
+
+        if (newWeapon != null)
+            newWeapon.Equip(this);
+        currentWeapon = newWeapon;
     }
 
     private void OnLeftGround()

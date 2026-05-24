@@ -1,9 +1,10 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class AttackCommand : ICommand
 {
     public AttackData attackData;
-    public async Awaitable Execute(IEntity entity)
+    public async UniTask Execute(IEntity entity)
     {
         if (entity is not IAttacker attacker)
         {

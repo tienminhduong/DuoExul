@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
-public class Hazard : MonoBehaviour, IHazard, IObject
+public class Hazard : MonoBehaviour, IHazard, IObject, IAttacker
 {
     [SerializeField] private int damage = 10;
     [SerializeField] private bool isActive = true;
@@ -15,6 +15,10 @@ public class Hazard : MonoBehaviour, IHazard, IObject
     public ObjectType ObjectType => objectType;
 
     public Rigidbody2D Rigidbody => throw new System.NotImplementedException();
+
+    public int BaseAttack => throw new System.NotImplementedException();
+
+    public AnimationController AnimationController => throw new System.NotImplementedException();
 
     private void Start()
     {
@@ -30,5 +34,10 @@ public class Hazard : MonoBehaviour, IHazard, IObject
             var changeHealthEvent = new ChangeHealthPlayerEvent(-Damage);
             EventBus<ChangeHealthPlayerEvent>.RaiseEvent(changeHealthEvent);
         }      
+    }
+
+    public void Attack(AttackData attackData)
+    {
+        throw new System.NotImplementedException();
     }
 }
