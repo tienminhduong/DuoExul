@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class RunVirgoState : BaseEnemyState
 {
+    PlayerController player;
     public RunVirgoState(BaseEnemyController enemyController, Animator animator, string animationName) 
         : base(enemyController, animator, animationName)
     {
+        
     }
 
     public override void Enter()
@@ -18,7 +20,8 @@ public class RunVirgoState : BaseEnemyState
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        enemyController.Move(Vector2.right, 1);
+        var direction = ((VirgoController)enemyController).CalculateVectorMove();
+        enemyController.Move(direction, 1);
     }
 
     public override void Exit()

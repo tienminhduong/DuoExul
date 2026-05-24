@@ -1,11 +1,14 @@
 using UnityEditor;
 using UnityEngine;
+using Utilities;
 
 public class Attack1VirgoState : BaseEnemyState
 {
-    public Attack1VirgoState(BaseEnemyController enemyController, Animator animator, string animationName)
+    CountdownTimer cooldownTimer;
+    public Attack1VirgoState(BaseEnemyController enemyController, Animator animator, string animationName, CountdownTimer countdownTimer)
         : base(enemyController, animator, animationName)
     {
+        this.cooldownTimer = countdownTimer;
     }
 
     public override void Enter()
@@ -13,6 +16,14 @@ public class Attack1VirgoState : BaseEnemyState
         base.Enter();
         Debug.Log("[Attack1VirgoState] Enter");
         animator.CrossFade(animationName, crossFadeDuration);
+        cooldownTimer.Reset();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        Debug.Log("[Attack1VirgoState] Exit");
+        cooldownTimer.Start();
     }
 
     public override bool IsFinished()

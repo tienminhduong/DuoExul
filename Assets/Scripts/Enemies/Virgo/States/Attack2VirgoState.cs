@@ -1,22 +1,26 @@
 using UnityEngine;
+using Utilities;
 
 public class Attack2VirgoState : BaseEnemyState
 {
-    public Attack2VirgoState(BaseEnemyController enemyController, Animator animator, string animationName) 
+    CountdownTimer cooldownTimer;
+    public Attack2VirgoState(BaseEnemyController enemyController, Animator animator, string animationName, CountdownTimer cooldownTimer) 
         : base(enemyController, animator, animationName)
     {
+        this.cooldownTimer = cooldownTimer;
     }
 
     public override void Enter()
     {
         base.Enter();
         animator.CrossFade(animationName, crossFadeDuration);
-        ((VirgoController)enemyController).SpawnEarth();
+        cooldownTimer.Reset();
     }
 
     public override void Exit()
     {
         base.Exit();
+        cooldownTimer.Start();
     }
 
     public override bool IsFinished()

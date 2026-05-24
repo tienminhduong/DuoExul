@@ -87,4 +87,12 @@ public class PlayerDetector : MonoBehaviour
     {
         detectionStrategy = strategy;
     }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(transform.position, detectionRange);
+    //    Gizmos.color = Color.green;
+    //    Gizmos.DrawLine(transform.position, Player.transform.position);
+    //}
 }
