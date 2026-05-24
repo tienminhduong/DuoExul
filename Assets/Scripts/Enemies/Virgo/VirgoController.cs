@@ -33,13 +33,18 @@ public class VirgoController : BaseEnemyController, IEntity, IDamageable
         var idleState = new IdleVirgoState(this, animator, "VirgoIdle");
         var runState = new RunVirgoState(this, animator, "VirgoRun");
         var skill1State = new Attack1VirgoState(this, animator, "VirgoSkill1");
+        var skill2State = new Attack2VirgoState(this, animator, "VirgoSkill1");
         var hurtState = new HurtVirgoState(this, animator, "VirgoHurt");
+        var dieState = new DieVirgoState(this, animator, "VirgoDie");
 
         //At(idleState, skill1State, new FuncPredicate(() => Random.value < 0.5f));
         //At(skill1State, idleState, new FuncPredicate(() => skill1State.IsFinished()));
         At(idleState, hurtState, new FuncPredicate(() => IsHurt()));
         //At(skill1State, hurtState, new FuncPredicate(() => IsHurt()));
         At(hurtState, idleState, new FuncPredicate(() => hurtState.IsFinished()));
+        At(hurtState, dieState, new FuncPredicate(() => HealthComponent.CurrentHealth <= 0));
+        At(idleState, skill2State, new FuncPredicate(() => Random.value < 0.5f));
+        At(skill2State, idleState, new FuncPredicate(() => skill2State.IsFinished()));
         stateMachine.SetState(idleState);
     }
 
@@ -62,6 +67,10 @@ public class VirgoController : BaseEnemyController, IEntity, IDamageable
         ProjectileSystem.Instance.Spawn(ProjectileType.VirgoProjectile, skill1SpawnPoint.position, Quaternion.identity, direction);
     }
 
+    public void SpawnEarth()
+    {
+        ProjectileSystem.Instance.Spawn(ProjectileType.VirgoEarth, skill1SpawnPoint.position + Vector3.right, Quaternion.identity, Vector2.down);
+    }    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("PlayerAttack"))

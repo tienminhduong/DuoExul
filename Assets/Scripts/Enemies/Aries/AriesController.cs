@@ -84,7 +84,6 @@ public class AriesController : BaseEnemyController, IEntity
         stateMachine.Update();
         timerSkill1.Tick(Time.deltaTime);
         timerSkill2.Tick(Time.deltaTime);
-        Debug.Log("Timer skill 1: " + timerSkill1.Time + " Timer skill 2: " + timerSkill2.Time);
     }
 
     private void FixedUpdate()

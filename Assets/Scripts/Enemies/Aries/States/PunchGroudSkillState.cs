@@ -18,14 +18,12 @@ public class PunchGroudSkillState : BaseEnemyState
         animator.Play(animationName);
         cooldownTimer.Stop();
         cooldownTimer.Reset();
-        Debug.LogWarning(cooldownTimer.Progress);
     }
 
     public override void Exit()
     {
         base.Exit();
         cooldownTimer.Start();
-        Debug.LogWarning(cooldownTimer.IsFinished);
     }
 
     public override bool IsFinished()
