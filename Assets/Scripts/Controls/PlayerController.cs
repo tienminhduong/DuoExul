@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
     [Header("Attack Commands")]
     [SerializeField] private List<CommandData> attackCommands = new List<CommandData>();
+    public List<CommandData> AttackCommands => attackCommands;
 
 
     [Header("Debug readonly")]

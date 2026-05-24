@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041d1163f1a60d4d5b5a4be1a8211e5c, type: 3}
+  m_Name: FireFinalSeq
+  m_EditorClassIdentifier: Assembly-CSharp::AttackData
+  label: FireFinalSeq
+  animationData:
+    priority: 1
+    stateName: Attack3
+    animationClip: {fileID: 7400000, guid: 3119657d75081317086ee0e8366fb12b, type: 2}
+  uniqueAbilities:
+  - rid: 8106861069686800476
+  - rid: 3910619275461394508
+  references:
+    version: 2
+    RefIds:
+    - rid: 3910619275461394508
+      type: {class: HealthDrainAbility, ns: , asm: Assembly-CSharp}
+      data:
+        drainPercentage: 1
+        attackMultiplier: 1.5
+    - rid: 8106861069686800476
+      type: {class: RecoilForceAbility, ns: , asm: Assembly-CSharp}
+      data:
+        recoilForce: 2
