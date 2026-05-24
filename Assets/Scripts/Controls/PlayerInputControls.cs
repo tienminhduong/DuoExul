@@ -28,6 +28,8 @@ public class PlayerInputControls : MonoBehaviour
 
         controls.Player.Jump.performed += ctx => player.SetJump();
         controls.Player.Jump.canceled += ctx => player.SetFall();
+        controls.Player.Dash.performed += ctx => player.SetDash();
+
         controls.Player.Attack.performed += ctx => player.HandleAttackInput();
         controls.Player.Attack.canceled += ctx => player.HandleAttackInputCancel();
     }

@@ -1409,6 +1409,8 @@ MonoBehaviour:
   jumpHeight: 4
   maxJumps: 1
   baseAttack: 10
+  dashSpeed: 10
+  dashRange: 3
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

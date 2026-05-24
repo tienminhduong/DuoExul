@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,7 +11,8 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public int Direction;
+    public int MoveDirection;
+    public int FacingDirection => MoveDirection != 0 ? MoveDirection : (transform.localScale.x > 0 ? -1 : 1);
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
 
@@ -18,6 +20,8 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     [SerializeField] private float jumpHeight = 6f;
     [SerializeField] private int maxJumps = 1;
     [SerializeField] private int baseAttack = 10;
+    [SerializeField] private float dashSpeed = 20f;
+    [SerializeField] private float dashRange = 5f;
     public int BaseAttack => baseAttack;
 
     [SerializeField] private LayerMask groundLayer;
@@ -82,6 +86,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         stateMachine.AddState(new PlayerWalkingState(this));
         stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
+        stateMachine.AddState(new PlayerDashState(this, dashSpeed, dashRange));
 
         stateMachine.SetState<PlayerIdleState>();
     }
@@ -99,9 +104,9 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public void SetDirection(Vector2 vector2)
     {
         // Debug.Log($"Input data: {vector2}");
-        Direction = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
-        transform.localScale = new Vector3(Direction != 0 ? -Direction : transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
+        MoveDirection = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
+        transform.localScale = new Vector3(MoveDirection != 0 ? -MoveDirection : transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        if (MoveDirection != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
             stateMachine.ChangeState<PlayerIdleState>();
@@ -122,10 +127,28 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
             stateMachine.ChangeState<PlayerFallState>();
     }
 
+    public void SetDash()
+    {
+        stateMachine.ChangeState<PlayerDashState>();
+    }
+
     // called in fixed update
     public void UpdateMoving()
     {
-        transform.Translate(Direction * moveSpeed * Time.fixedDeltaTime * Vector2.right);
+        transform.Translate(MoveDirection * moveSpeed * Time.fixedDeltaTime * Vector2.right);
+    }
+
+    public async UniTask PerformDash()
+    {
+        float distanceTraveled = 0f;
+        Vector2 startPosition = transform.position;
+        while (distanceTraveled < dashRange)
+        {
+            float step = dashSpeed * Time.fixedDeltaTime;
+            transform.Translate(FacingDirection * step * Vector2.right);
+            distanceTraveled = Vector2.Distance(startPosition, transform.position);
+            await UniTask.Yield(PlayerLoopTiming.FixedUpdate);
+        }
     }
 
     private void FixedUpdate()
