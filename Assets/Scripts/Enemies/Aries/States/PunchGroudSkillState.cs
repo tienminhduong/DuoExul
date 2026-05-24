@@ -1,10 +1,14 @@
 using UnityEngine;
+using Utilities;
 
 public class PunchGroudSkillState : BaseEnemyState
 {
-    public PunchGroudSkillState(BaseEnemyController enemyController, Animator animator, string animationName) 
+    CountdownTimer cooldownTimer;
+    public PunchGroudSkillState(BaseEnemyController enemyController, Animator animator, 
+                                string animationName, CountdownTimer cooldownTimer) 
         : base(enemyController, animator, animationName)
     {
+        this.cooldownTimer = cooldownTimer;
     }
 
     public override void Enter()
@@ -12,6 +16,16 @@ public class PunchGroudSkillState : BaseEnemyState
         base.Enter();
         Debug.Log("Entered Punch Ground Skill State");
         animator.Play(animationName);
+        cooldownTimer.Stop();
+        cooldownTimer.Reset();
+        Debug.LogWarning(cooldownTimer.Progress);
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        cooldownTimer.Start();
+        Debug.LogWarning(cooldownTimer.IsFinished);
     }
 
     public override bool IsFinished()

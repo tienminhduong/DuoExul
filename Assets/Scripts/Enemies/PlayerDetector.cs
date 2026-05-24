@@ -51,7 +51,7 @@ public class PlayerDetector : MonoBehaviour
     [SerializeField] private LayerMask sightBlockerMasks; // Layer mask to identify objects that can block sight
     [SerializeField] private LayerMask playerLayer; // Layer mask to identify the player
     [SerializeField] private float detectionRange = 5f; // Maximum range for line of sight detection
-    public Transform Player { get; private set; }
+    public GameObject Player { get; private set; }
     private CountdownTimer detectionTimer;
     IDetectionStrategy detectionStrategy;
 
@@ -62,7 +62,7 @@ public class PlayerDetector : MonoBehaviour
         {
             Debug.LogError("PlayerController not found in the scene. Please ensure there is a GameObject with a PlayerController component.");
         }
-        Player = player?.transform; // Find the player in the scene      
+        Player = player.gameObject; // Find the player in the scene      
     }
     private void Start()
     {
@@ -78,7 +78,7 @@ public class PlayerDetector : MonoBehaviour
     public bool CanDetectPlayer()
     {
         var canDetect = detectionTimer.IsRunning || 
-            detectionStrategy.Execute(transform, Player, sightBlockerMasks, playerLayer, detectionTimer);
+            detectionStrategy.Execute(transform, Player.transform, sightBlockerMasks, playerLayer, detectionTimer);
         Debug.Log($"Can detect player: {canDetect}");
         return canDetect;
     }
