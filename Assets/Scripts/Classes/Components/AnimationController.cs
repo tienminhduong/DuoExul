@@ -11,7 +11,7 @@ public class AnimationController
     }
 
     public UnityAction OnOverrideAnimationComplete;
-
+    public UnityAction OnStandardAnimationComplete;
     private async Awaitable CrossFade(AnimationData animationData, float transitionDuration = 0.1f)
     {
         // Debug.Log($"Crossfading to state with hash: {animationData.Hash}");
@@ -41,6 +41,7 @@ public class AnimationController
             {
                 currentAnim = anim;
                 await CrossFade(anim, transitionDuration);
+                OnStandardAnimationComplete?.Invoke();
             }
         }
     }
