@@ -1,7 +1,8 @@
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public interface ICommand
 {
-    Awaitable Execute(IEntity entity);
+    UniTask Execute(IEntity entity);
 }

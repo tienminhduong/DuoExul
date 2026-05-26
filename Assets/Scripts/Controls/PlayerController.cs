@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,28 +11,32 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public int Direction;
+    public int FacingDirection => MoveDirection != 0 ? MoveDirection : (transform.localScale.x > 0 ? -1 : 1);
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
-
-    [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpHeight = 6f;
-    [SerializeField] private int maxJumps = 1;
-    [SerializeField] private int baseAttack = 10;
-    public int BaseAttack => baseAttack;
+    public PlayerStat playerStat = new();
+    public float BaseAttack => playerStat.baseAttack;
 
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Reference")]
     [SerializeField] private GameObject hitbox;
     [SerializeField] private AttackCommandInvoker attackCommandInvoker;
+    [SerializeField] private List<PlayerWeaponData> weapons = new();
+
+    [ReadOnly] public PlayerWeaponData currentWeapon;
 
     [Header("Attack Commands")]
-    [SerializeField] private List<CommandData> attackCommands = new List<CommandData>();
+    [SerializeField] private List<CommandData> attackCommands = new();
+    [ReadOnly][SerializeField] public CommandData defaultAttackCommand;
+    [ReadOnly][SerializeField] public CommandData pogoAttackCommand;
+    [ReadOnly][SerializeField] public CommandData skillAttackCommand;
+    public List<CommandData> AttackCommands => attackCommands;
 
 
     [Header("Debug readonly")]
-    public Vector2 CurrentDirectionInput;
+    [ReadOnly] public int MoveDirection;
+    [ReadOnly] public Vector2 CurrentDirectionInput;
     [ReadOnly][SerializeField] private StateMachine stateMachine;
 
     // For double jumping, reset if touch the ground, -1 when leave the ground
@@ -80,15 +85,16 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
         stateMachine.AddState(new PlayerIdleState(this));
         stateMachine.AddState(new PlayerWalkingState(this));
-        stateMachine.AddState(new PlayerJumpState(this, jumpHeight));
+        stateMachine.AddState(new PlayerJumpState(this, playerStat.jumpHeight));
         stateMachine.AddState(new PlayerFallState(this));
+        stateMachine.AddState(new PlayerDashState(this, playerStat.dashSpeed, playerStat.dashRange));
 
         stateMachine.SetState<PlayerIdleState>();
     }
 
     private void ResetOnTouch()
     {
-        viableJumps = maxJumps;
+        viableJumps = playerStat.maxJumps;
     }
 
     public void ChangeState<T>() where T : IState
@@ -99,9 +105,9 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public void SetDirection(Vector2 vector2)
     {
         // Debug.Log($"Input data: {vector2}");
-        Direction = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
-        transform.localScale = new Vector3(Direction != 0 ? -Direction : transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        if (Direction != 0 && stateMachine.IsInState<PlayerIdleState>())
+        MoveDirection = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
+        transform.localScale = new Vector3(MoveDirection != 0 ? -MoveDirection : transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        if (MoveDirection != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())
             stateMachine.ChangeState<PlayerIdleState>();
@@ -122,10 +128,28 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
             stateMachine.ChangeState<PlayerFallState>();
     }
 
+    public void SetDash()
+    {
+        stateMachine.ChangeState<PlayerDashState>();
+    }
+
     // called in fixed update
     public void UpdateMoving()
     {
-        transform.Translate(Direction * moveSpeed * Time.fixedDeltaTime * Vector2.right);
+        transform.Translate(MoveDirection * playerStat.moveSpeed * Time.fixedDeltaTime * Vector2.right);
+    }
+
+    public async UniTask PerformDash()
+    {
+        float distanceTraveled = 0f;
+        Vector2 startPosition = transform.position;
+        while (distanceTraveled < playerStat.dashRange)
+        {
+            float step = playerStat.dashSpeed * Time.fixedDeltaTime;
+            transform.Translate(FacingDirection * step * Vector2.right);
+            distanceTraveled = Vector2.Distance(startPosition, transform.position);
+            await UniTask.Yield(PlayerLoopTiming.FixedUpdate);
+        }
     }
 
     private void FixedUpdate()
@@ -145,6 +169,28 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         OnGrounded?.Invoke();
     }
 
+
+    public void UnequipCurrentWeapon()
+    {
+        if (currentWeapon != null)
+        {
+            currentWeapon.Unequip(this);
+            currentWeapon = null;
+        }
+    }
+
+
+    public void ChangeWeapon(PlayerWeaponData newWeapon)
+    {
+        Debug.Log($"Changing weapon to: {newWeapon.weaponName}");
+        if (currentWeapon != null)
+            currentWeapon.Unequip(this);
+
+        if (newWeapon != null)
+            newWeapon.Equip(this);
+        currentWeapon = newWeapon;
+    }
+
     private void OnLeftGround()
     {
         isGrounded = false;
@@ -157,13 +203,13 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
     public void HandleAttackInput()
     {
-        CommandData selectedAttackCommand = attackCommands[0];
+        // CommandData selectedAttackCommand = attackCommands[0];
+        var selectedAttackCommand = defaultAttackCommand;
         if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1 && !isGrounded)
-            selectedAttackCommand = attackCommands[1];
+            selectedAttackCommand = pogoAttackCommand;
+            // selectedAttackCommand = attackCommands[1];
         if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
-        {
-            var _ = attackCommandInvoker.ExecuteCommandsAsync();
-        }
+            attackCommandInvoker.ExecuteCommandsAsync().Forget();
     }
 
     public void HandleAttackInputCancel()
@@ -181,6 +227,15 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         else
         {
             HealthComponent.Heal((int)evt.HealthChange);
+        }
+    }
+
+    public void HandleSkillAttackInput()
+    {
+        if (skillAttackCommand != null)
+        {
+            attackCommandInvoker.SetComboAttackData(skillAttackCommand);
+            attackCommandInvoker.ExecuteCommandsAsync().Forget();
         }
     }
 }

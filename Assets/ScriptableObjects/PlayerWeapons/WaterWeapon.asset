@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e6136eea2095240aeff80f47f9da41, type: 3}
+  m_Name: WaterWeapon
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeaponData
+  weaponName: Water
+  ApplyingEffects:
+  - rid: 3910619271451116006
+  AttackCommand: {fileID: 11400000, guid: fd1a6e32812f401438464426db4959b5, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3910619271451116006
+      type: {class: BuffSpeedEffects, ns: , asm: Assembly-CSharp}
+      data:
+        modifier: 2

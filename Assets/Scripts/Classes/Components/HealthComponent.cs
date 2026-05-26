@@ -7,6 +7,9 @@ public class HealthComponent : MonoBehaviour
     [SerializeField] private int maxHealth = 100;
     [ReadOnly][SerializeField] private int currentHealth;
 
+    public int CurrentHealth => currentHealth;
+    public int MaxHealth => maxHealth;
+
     public UnityAction OnDeath;
 
     void Start()

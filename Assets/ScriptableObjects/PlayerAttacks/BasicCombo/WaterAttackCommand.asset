@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94cd0d7bc832071cb7b119c3792b193, type: 3}
+  m_Name: WaterAttackCommand
+  m_EditorClassIdentifier: Assembly-CSharp::CommandData
+  label: WaterAttackCommand
+  isLooping: 1
+  commands:
+  - rid: 3910619271451116007
+  - rid: 3910619271451116008
+  references:
+    version: 2
+    RefIds:
+    - rid: 3910619271451116007
+      type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: 81b415858e615c03ba3b12538b852728, type: 2}
+    - rid: 3910619271451116008
+      type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
+      data:
+        attackData: {fileID: 11400000, guid: f33ec12960665424c933fe30fee58f7d, type: 2}
