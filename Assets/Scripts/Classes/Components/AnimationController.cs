@@ -42,6 +42,7 @@ public class AnimationController
             {
                 currentAnim = anim;
                 await CrossFade(anim, transitionDuration);
+                OnStandardAnimationComplete?.Invoke();
             }
         }
     }

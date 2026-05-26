@@ -39,4 +39,7 @@ public class HealthComponent : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
+
+    public int CurrentHealth => currentHealth;
+    public int MaxHealth => maxHealth;
 }
