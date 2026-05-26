@@ -15,19 +15,22 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
     public PlayerStat playerStat = new();
-    public int BaseAttack => playerStat.baseAttack;
+    public float BaseAttack => playerStat.baseAttack;
 
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Reference")]
     [SerializeField] private GameObject hitbox;
     [SerializeField] private AttackCommandInvoker attackCommandInvoker;
-    [SerializeField] private List<PlayerWeaponData> weapons = new List<PlayerWeaponData>();
+    [SerializeField] private List<PlayerWeaponData> weapons = new();
 
     [ReadOnly] public PlayerWeaponData currentWeapon;
 
     [Header("Attack Commands")]
-    [SerializeField] private List<CommandData> attackCommands = new List<CommandData>();
+    [SerializeField] private List<CommandData> attackCommands = new();
+    [ReadOnly][SerializeField] public CommandData defaultAttackCommand;
+    [ReadOnly][SerializeField] public CommandData pogoAttackCommand;
+    [ReadOnly][SerializeField] public CommandData skillAttackCommand;
     public List<CommandData> AttackCommands => attackCommands;
 
 
@@ -200,13 +203,13 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 
     public void HandleAttackInput()
     {
-        CommandData selectedAttackCommand = attackCommands[0];
+        // CommandData selectedAttackCommand = attackCommands[0];
+        var selectedAttackCommand = defaultAttackCommand;
         if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1 && !isGrounded)
-            selectedAttackCommand = attackCommands[1];
+            selectedAttackCommand = pogoAttackCommand;
+            // selectedAttackCommand = attackCommands[1];
         if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
-        {
-            var _ = attackCommandInvoker.ExecuteCommandsAsync();
-        }
+            attackCommandInvoker.ExecuteCommandsAsync().Forget();
     }
 
     public void HandleAttackInputCancel()
@@ -224,6 +227,15 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         else
         {
             HealthComponent.Heal((int)evt.HealthChange);
+        }
+    }
+
+    public void HandleSkillAttackInput()
+    {
+        if (skillAttackCommand != null)
+        {
+            attackCommandInvoker.SetComboAttackData(skillAttackCommand);
+            attackCommandInvoker.ExecuteCommandsAsync().Forget();
         }
     }
 }

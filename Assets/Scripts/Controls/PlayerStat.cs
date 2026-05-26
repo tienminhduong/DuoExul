@@ -7,7 +7,7 @@ public class PlayerStat
     public float moveSpeed = 5f;
     public float jumpHeight = 6f;
     public int maxJumps = 1;
-    public int baseAttack = 10;
+    public float baseAttack = 10;
     public float dashSpeed = 20f;
     public float dashRange = 5f;
 

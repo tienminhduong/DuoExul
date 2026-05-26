@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using TriInspector;
 using UnityEngine;
 
@@ -50,7 +51,7 @@ public class AttackCommandInvoker : MonoBehaviour
         isPaused = false;
     }
 
-    public async Awaitable ExecuteCommandsAsync()
+    public async UniTask ExecuteCommandsAsync()
     {
         if (isExecuting)
         {
@@ -63,7 +64,7 @@ public class AttackCommandInvoker : MonoBehaviour
             await StartCommandsAsync();
     }
 
-    public async Awaitable StartCommandsAsync()
+    public async UniTask StartCommandsAsync()
     {
         isExecuting = true;
         while (isExecuting)
@@ -76,7 +77,7 @@ public class AttackCommandInvoker : MonoBehaviour
                     StopExecution();
                     break;
                 }
-                await Awaitable.NextFrameAsync();
+                await UniTask.Yield();
                 continue;
             }
 

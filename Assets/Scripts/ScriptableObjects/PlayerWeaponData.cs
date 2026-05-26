@@ -7,7 +7,8 @@ public class PlayerWeaponData : ScriptableObject
     public string weaponName;
     [SerializeReference] private List<IOvertimeEffect> ApplyingEffects;
     public CommandData AttackCommand;
-    private CommandData temporaryCommand;
+    public CommandData PogoAttackCommand;
+    public CommandData SkillAttackCommand;
 
     public void Equip(PlayerController player)
     {
@@ -16,8 +17,9 @@ public class PlayerWeaponData : ScriptableObject
         {
             effect.ApplyEffect(player.playerStat);
         }
-        temporaryCommand = player.AttackCommands[0];
-        player.AttackCommands[0] = AttackCommand;
+        player.defaultAttackCommand = AttackCommand;
+        player.pogoAttackCommand = PogoAttackCommand;
+        player.skillAttackCommand = SkillAttackCommand;
     }
 
     public void Unequip(PlayerController player)
@@ -29,6 +31,5 @@ public class PlayerWeaponData : ScriptableObject
         {
             effect.RemoveEffect(player.playerStat);
         }
-        player.AttackCommands[0] = temporaryCommand;
     }
 }

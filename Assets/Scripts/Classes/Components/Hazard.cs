@@ -16,7 +16,7 @@ public class Hazard : MonoBehaviour, IHazard, IObject, IAttacker
 
     public Rigidbody2D Rigidbody => throw new System.NotImplementedException();
 
-    public int BaseAttack => throw new System.NotImplementedException();
+    public float BaseAttack => throw new System.NotImplementedException();
 
     public AnimationController AnimationController => throw new System.NotImplementedException();
 

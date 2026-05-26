@@ -1,23 +1,22 @@
-using UnityEngine.Events;
+using UnityEngine;
 
-public class BuffSpeedEffects : BaseOvertimeEffect
+public class BuffAttackEffects : BaseOvertimeEffect
 {
     public float modifier;
     public float maxDuration;
 
-    public BuffSpeedEffects()
+    public BuffAttackEffects()
     {
-        EffectKey = "BuffSpeed";
+        EffectKey = "BuffAttack";
         MaxDuration = maxDuration;
     }
-
 
     public override bool ApplyEffect(PlayerStat entity)
     {
         if (!base.ApplyEffect(entity))
             return false;
 
-        entity.moveSpeed *= modifier;
+        entity.baseAttack *= modifier;
         return true;
     }
 
@@ -26,7 +25,7 @@ public class BuffSpeedEffects : BaseOvertimeEffect
         if (!base.RemoveEffect(entity))
             return false;
 
-        entity.moveSpeed /= modifier;
+        entity.baseAttack /= modifier;
         return true;
     }
 }
