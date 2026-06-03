@@ -63,6 +63,14 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         SetupStateMachine();
     }
 
+    void Start()
+    {
+        if (weapons.Count > 0)
+        {
+            ChangeWeapon(weapons[0]);
+        }
+    }
+
     void OnEnable()
     {
         groundDetector.OnGrounded += OnGroundedCollided;
@@ -214,6 +222,11 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         var selectedAttackCommand = defaultAttackCommand;
         if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1 && !isGrounded)
             selectedAttackCommand = pogoAttackCommand;
+        if (selectedAttackCommand == null)
+        {
+            Debug.LogWarning("Selected attack command is null. Check if the command data is assigned in the inspector.");
+            return;
+        }
         // selectedAttackCommand = attackCommands[1];
         if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
             attackCommandInvoker.ExecuteCommandsAsync().Forget();
