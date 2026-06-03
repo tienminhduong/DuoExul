@@ -23,7 +23,7 @@ public class LineOfSightStrategy : IDetectionStrategy
         // 1. Kiểm tra khoảng cách trước
         if (maxRange > 0 && distance > maxRange)
         {
-            Debug.Log("too far");
+            //Debug.Log("too far");
             return false;
         }
 
@@ -36,12 +36,12 @@ public class LineOfSightStrategy : IDetectionStrategy
             // Kiểm tra xem layer của vật va chạm có nằm trong LayerMask không
             if (((1 << hit.collider.gameObject.layer) & targetMask) != 0)
             {
-                Debug.Log("Player detected");
+                //Debug.Log("Player detected");
                 timer.Start(); // Start cooldown timer after a successful detection check
                 return true;
             }
         }
-        Debug.Log("Player not detected " + hit.collider.gameObject.name + " " + (1 << hit.collider.gameObject.layer) + " " + targetMask.value);
+        //Debug.Log("Player not detected " + hit.collider.gameObject.name + " " + (1 << hit.collider.gameObject.layer) + " " + targetMask.value);
         return false;
     }
 }
