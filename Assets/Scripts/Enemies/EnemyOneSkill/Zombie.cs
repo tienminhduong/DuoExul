@@ -1,4 +1,5 @@
 using AIEnemy;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour, IAttacker
@@ -18,6 +19,8 @@ public class Zombie : MonoBehaviour, IAttacker
 
     public Rigidbody2D Rigidbody => _rigidbody2D;
 
+
+    AttackCommandInvoker commandInvoker;
     Rigidbody2D _rigidbody2D;
     AnimationController animationController;
 
@@ -25,10 +28,12 @@ public class Zombie : MonoBehaviour, IAttacker
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         animationController = new AnimationController(GetComponent<Animator>());
+        commandInvoker = GetComponent<AttackCommandInvoker>();
     }
 
     private void Start()
     {
+        InitializeStateMachine();
     }
 
     void InitializeStateMachine()
@@ -40,6 +45,7 @@ public class Zombie : MonoBehaviour, IAttacker
     private void Update()
     {
         stateMachine.Update();
+        commandInvoker.ExecuteCommandsAsync().Forget();
     }
 
     private void FixedUpdate()
@@ -49,6 +55,6 @@ public class Zombie : MonoBehaviour, IAttacker
 
     public void Attack(AttackData attackData)
     {
-        throw new System.NotImplementedException();
+
     }
 }
