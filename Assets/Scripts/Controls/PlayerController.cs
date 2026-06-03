@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
 {
     public Rigidbody2D Rigidbody { get; private set; }
     public BoxCollider2D Collider { get; private set; }
-    public int FacingDirection => MoveDirection != 0 ? MoveDirection : (transform.localScale.x > 0 ? -1 : 1);
+    public int FacingDirection => MoveDirection != 0 ? MoveDirection : (transform.localScale.x > 0 ? 1 : -1);
     public AnimationController AnimationController { get; private set; }
     public HealthComponent HealthComponent { get; private set; }
     public PlayerStat playerStat = new();
@@ -143,6 +143,9 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     {
         float distanceTraveled = 0f;
         Vector2 startPosition = transform.position;
+        var gravityScale = Rigidbody.gravityScale;
+        Rigidbody.linearVelocity = Vector2.zero; // Reset velocity before dash
+        Rigidbody.gravityScale = 0f; // Disable gravity during dash
         while (distanceTraveled < playerStat.dashRange)
         {
             float step = playerStat.dashSpeed * Time.fixedDeltaTime;
@@ -150,6 +153,10 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
             distanceTraveled = Vector2.Distance(startPosition, transform.position);
             await UniTask.Yield(PlayerLoopTiming.FixedUpdate);
         }
+        Rigidbody.gravityScale = gravityScale; // Restore gravity
+        if (MoveDirection != 0)
+            stateMachine.ChangeState<PlayerWalkingState>();
+        else stateMachine.ChangeState<PlayerIdleState>();
     }
 
     private void FixedUpdate()
@@ -207,7 +214,7 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
         var selectedAttackCommand = defaultAttackCommand;
         if (CurrentDirectionInput.y < -0.5f && attackCommands.Count > 1 && !isGrounded)
             selectedAttackCommand = pogoAttackCommand;
-            // selectedAttackCommand = attackCommands[1];
+        // selectedAttackCommand = attackCommands[1];
         if (attackCommandInvoker.SetComboAttackData(selectedAttackCommand))
             attackCommandInvoker.ExecuteCommandsAsync().Forget();
     }

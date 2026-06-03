@@ -15,8 +15,8 @@ public class PlayerDashState : BasePlayerState
     public override void Enter()
     {
         base.Enter();
-        var walkAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Walk");
-        var _ = AnimationController.PlayAnimation(walkAnimData);
-        player.PerformDash().ContinueWith(() => player.ChangeState<PlayerWalkingState>());
+        var dashAnimData = new AnimationData(AnimationData.PriorityLevel.Standard, "Dash");
+        var _ = AnimationController.PlayAnimation(dashAnimData);
+        player.PerformDash().Forget();
     }
 }
