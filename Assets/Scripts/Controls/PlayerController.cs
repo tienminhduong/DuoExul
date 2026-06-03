@@ -105,8 +105,8 @@ public class PlayerController : MonoBehaviour, IAttacker, IDamageable
     public void SetDirection(Vector2 vector2)
     {
         // Debug.Log($"Input data: {vector2}");
-        MoveDirection = Mathf.Abs(vector2.x) >= 0.1f ? (int)Mathf.Sign(vector2.x) : 0;
-        transform.localScale = new Vector3(MoveDirection != 0 ? -MoveDirection : transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        MoveDirection = Mathf.Abs(vector2.x) >= 0.01f ? (int)Mathf.Sign(vector2.x) : 0;
+        transform.localScale = new Vector3(MoveDirection != 0 ? MoveDirection : transform.localScale.x, transform.localScale.y, transform.localScale.z);
         if (MoveDirection != 0 && stateMachine.IsInState<PlayerIdleState>())
             stateMachine.ChangeState<PlayerWalkingState>();
         else if (stateMachine.IsInState<PlayerWalkingState>())

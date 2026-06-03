@@ -30,7 +30,7 @@ public abstract class BaseEnemyController : MonoBehaviour, IAttacker, IDamageabl
         _collider = GetComponent<Collider2D>();
     }
 
-    public int BaseAttack => 0; // this property may not use, but we need it to implement IAttacker
+    public float BaseAttack => 0; // this property may not use, but we need it to implement IAttacker
 
     public AnimationController AnimationController => _animationController;
 

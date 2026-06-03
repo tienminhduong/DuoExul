@@ -242,7 +242,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6895361227193693327, guid: 9bebe8977a3fe5e65aef1bc15eb1640b, type: 3}
+  m_Sprite: {fileID: -2371012913890026101, guid: 3dd0777065024294f9607762bc94f984, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -340,7 +340,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.87, y: 2.21}
+    oldSize: {x: 1.4375, y: 2}
     newSize: {x: 1.87, y: 2.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -541,7 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209576322272961788}
   - component: {fileID: 9114853190538055192}
-  - component: {fileID: 8030418746796462107}
+  - component: {fileID: 2292961658106834740}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -607,7 +607,7 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
---- !u!114 &8030418746796462107
+--- !u!114 &2292961658106834740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -632,7 +632,7 @@ MonoBehaviour:
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
   TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 1, y: 5, z: 1}
+  Damping: {x: 1, y: 1, z: 1}
   Lookahead:
     Enabled: 0
     Time: 0

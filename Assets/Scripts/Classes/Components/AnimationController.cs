@@ -12,6 +12,7 @@ public class AnimationController
     }
 
     public UnityAction OnOverrideAnimationComplete;
+    public UnityAction OnStandardAnimationComplete;
 
     private async UniTask CrossFade(AnimationData animationData, float transitionDuration = 0.1f)
     {
