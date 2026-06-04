@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94cd0d7bc832071cb7b119c3792b193, type: 3}
   m_Name: FireAttackCommand
   m_EditorClassIdentifier: Assembly-CSharp::CommandData
-  label: WaterAttackCommand
+  label: FireAttackCommand
   isLooping: 1
   commands:
   - rid: 3910619271451116007
-  - rid: 3910619271451116008
   references:
     version: 2
     RefIds:
@@ -24,7 +23,3 @@ MonoBehaviour:
       type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
       data:
         attackData: {fileID: 11400000, guid: 19b2eac438a3fb4428135715ce57b50a, type: 2}
-    - rid: 3910619271451116008
-      type: {class: AttackCommand, ns: , asm: Assembly-CSharp}
-      data:
-        attackData: {fileID: 11400000, guid: 3d9bd68e4801cc5478314960e972a120, type: 2}
