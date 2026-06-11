@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: e4fd5a5fe55b8b14fb551c6cba716826
+guid: 23d74e48528c5a44d84ceefa9964a16a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6875400983565140709
-    second: Zombie_Default_Idle_0
+      213: -3772868458599140213
+    second: Bringer-of-Death_Attack_7_0
   - first:
-      213: 1135747574641226419
-    second: Zombie_Default_Idle_1
+      213: -5221082043907134903
+    second: Bringer-of-Death_Attack_7_1
   - first:
-      213: -1564592213290154824
-    second: Zombie_Default_Idle_2
+      213: 5552261066660014449
+    second: Bringer-of-Death_Attack_7_2
   - first:
-      213: 3778401757586540863
-    second: Zombie_Default_Idle_3
+      213: 3275002693038992717
+    second: Bringer-of-Death_Attack_7_3
   - first:
-      213: -419719520007722648
-    second: Zombie_Default_Idle_4
-  - first:
-      213: 8194009822421802658
-    second: Zombie_Default_Idle_5
+      213: 6347120003969514040
+    second: Bringer-of-Death_Attack_7_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,12 +58,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,133 +125,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombie_Default_Idle_0
+      name: Bringer-of-Death_Attack_7_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 16
-        width: 24
-        height: 30
+        x: 10
+        y: 0
+        width: 110
+        height: 83
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e285c164c45a6f50800000000000000
-      internalID: 6875400983565140709
+      spriteID: b843cec502414abc0800000000000000
+      internalID: -3772868458599140213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Default_Idle_1
+      name: Bringer-of-Death_Attack_7_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 16
-        width: 24
-        height: 29
+        x: 86
+        y: 81
+        width: 8
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b27005d66cf2cf00800000000000000
-      internalID: 1135747574641226419
+      spriteID: 94aaeb52b8dfa87b0800000000000000
+      internalID: -5221082043907134903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Default_Idle_2
+      name: Bringer-of-Death_Attack_7_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 16
-        width: 24
-        height: 28
+        x: 117
+        y: 66
+        width: 14
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b48f7ceba3794ae0800000000000000
-      internalID: -1564592213290154824
+      spriteID: 1796082e5089d0d40800000000000000
+      internalID: 5552261066660014449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Default_Idle_3
+      name: Bringer-of-Death_Attack_7_3
       rect:
         serializedVersion: 2
-        x: 212
-        y: 16
-        width: 24
-        height: 28
+        x: 2
+        y: 27
+        width: 7
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3948a331649f6430800000000000000
-      internalID: 3778401757586540863
+      spriteID: d4d690df895237d20800000000000000
+      internalID: 3275002693038992717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie_Default_Idle_4
+      name: Bringer-of-Death_Attack_7_4
       rect:
         serializedVersion: 2
-        x: 276
-        y: 16
-        width: 24
-        height: 29
+        x: 4
+        y: 13
+        width: 7
+        height: 10
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 86964a0025bdc2af0800000000000000
-      internalID: -419719520007722648
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Zombie_Default_Idle_5
-      rect:
-        serializedVersion: 2
-        x: 340
-        y: 16
-        width: 24
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ae538f0588f6b170800000000000000
-      internalID: 8194009822421802658
+      spriteID: 83af06fd300851850800000000000000
+      internalID: 6347120003969514040
       vertices: []
       indices: 
       edges: []
@@ -263,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c2264b7bf99d85040935b941caa5b193
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -271,16 +246,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Zombie_Default_Idle_0: 6875400983565140709
-      Zombie_Default_Idle_1: 1135747574641226419
-      Zombie_Default_Idle_2: -1564592213290154824
-      Zombie_Default_Idle_3: 3778401757586540863
-      Zombie_Default_Idle_4: -419719520007722648
-      Zombie_Default_Idle_5: 8194009822421802658
+      Bringer-of-Death_Attack_7_0: -3772868458599140213
+      Bringer-of-Death_Attack_7_1: -5221082043907134903
+      Bringer-of-Death_Attack_7_2: 5552261066660014449
+      Bringer-of-Death_Attack_7_3: 3275002693038992717
+      Bringer-of-Death_Attack_7_4: 6347120003969514040
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
